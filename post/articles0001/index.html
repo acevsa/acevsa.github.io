@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="不少博主用AI编程实现blog 的各种效果 确实很强，之前也测试过不少AI 讯飞星火，通义千问，chagpt等等 可以参考之前的一些post 仪式感 礼仪 炫富 看看AI的回答 – ACEVS 我把写的文章给ai读取，得到一些反馈 – ACEVS\n程序方面 我问通义千问通义tongyi.ai_你的全能AI助手-通义千问怎么部署hugo 到 github 我看了步骤简单明了，比我写的好多了。 再比如部署完到 username.github.io 看page页面时候如果发现404 你再问通义千问 一下子出来4.5种情况。提示你去检查核对和解决办法都有。 你再问hugo 如何github actions 提高效率，又是一阵答案。还有注释。 讯飞星火讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞依旧是如此。实例讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞 程序方面很强很高效.\n读书方面 我问 客户的游艇在哪里 AI没有意识到是书籍，直接告诉我了几种现实中寻找游艇的方法. 我问 《客户的游艇在哪里 》书籍内容的时候，回答还是凑合的。 比如讯飞星火的 还会标注参考资料。链接查看讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞 通义千问回答差不多，就是没有标注参考资料。\n[!NOTE] 《客户的游艇在哪里》是一本深入揭示华尔街金融界内幕的书籍，由美国作家施韦德撰写，孙建和姚洁翻译，于2010年4月1日由机械工业出版社出版[^1^][^2^]。\n这本书通过讲述1929年股市崩盘前后的故事，展示了投机者们的行为模式和心理状态。书中不仅描绘了股市的波动和股民的心理，还揭示了金融中介机构如何盈利，以及他们可能忽视客户利益的行为，如基金经理在基金亏损的情况下仍收取管理费等[^1^][^2^]。\n作者施韦德以其在华尔街的经历为基础，用轻松活泼的语言风格对世俗进行了无情的鞭笞，同时蕴含着投资智慧，这些内容至今仍具有现实意义[^1^][^2^]。\n总的来说，《客户的游艇在哪里》不仅是一本关于华尔街闹剧的书，它还提供了对投资市场的深刻洞察和批评。\n我又问了 我最近看过的书 《毛泽东点评历史人物》书籍内容 讯飞星火没有这方面内容，抱歉，我还没有学习到关于这个话题的内容，无法提供相关信息。您可以选择其他问题，我将努力为您解答。\n通义千问有的，举了几个例子和一些总结的话，也是可以的没啥问题。\n我记得这本书参考了1000本左右的其他书籍。后面最后一章用了几千字或者近万字来罗列作者的参考的书目。好多人的传记。\n读书方面，可能限于问题的问法，和展示答案的算法或者其他因素。 读书思考还是有点用的。可能AI设计的如此。让人类还有点颜面？ 故意让让人类？\n绘画 游戏 其他 AI绘画那是一个绝字。 虽然手啥的 可能还不行。但是其他都不错了。 根据提示词 可以画出来一个游戏角色，演绎一段视频， 游戏现在看上去和电影工程其实差不多了。尤其一些科幻电影和游戏唯一不同的就是你不能操作控制。 现实中如果机器人替代了人类大部分劳动，人类只能像《黑客帝国》那样一遍一遍的战斗看看能不能见到最后的boss 机器大脑。 硅基生命替代碳基生命，按照周期表，按照进化，我感觉硅基更先进一点，目前差的就是人类黑洞一般恐怖的大脑所具有的创造型。 《银河系漫游指南》有个外星人眼睛是黑洞。每个人的眼睛看上去都是像黑洞的。\n">
+<title>AI再次尝试</title>
+
+<link rel='canonical' href='http://localhost:1313/post/articles0001/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="AI再次尝试">
+<meta property='og:description' content="不少博主用AI编程实现blog 的各种效果 确实很强，之前也测试过不少AI 讯飞星火，通义千问，chagpt等等 可以参考之前的一些post 仪式感 礼仪 炫富 看看AI的回答 – ACEVS 我把写的文章给ai读取，得到一些反馈 – ACEVS\n程序方面 我问通义千问通义tongyi.ai_你的全能AI助手-通义千问怎么部署hugo 到 github 我看了步骤简单明了，比我写的好多了。 再比如部署完到 username.github.io 看page页面时候如果发现404 你再问通义千问 一下子出来4.5种情况。提示你去检查核对和解决办法都有。 你再问hugo 如何github actions 提高效率，又是一阵答案。还有注释。 讯飞星火讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞依旧是如此。实例讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞 程序方面很强很高效.\n读书方面 我问 客户的游艇在哪里 AI没有意识到是书籍，直接告诉我了几种现实中寻找游艇的方法. 我问 《客户的游艇在哪里 》书籍内容的时候，回答还是凑合的。 比如讯飞星火的 还会标注参考资料。链接查看讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞 通义千问回答差不多，就是没有标注参考资料。\n[!NOTE] 《客户的游艇在哪里》是一本深入揭示华尔街金融界内幕的书籍，由美国作家施韦德撰写，孙建和姚洁翻译，于2010年4月1日由机械工业出版社出版[^1^][^2^]。\n这本书通过讲述1929年股市崩盘前后的故事，展示了投机者们的行为模式和心理状态。书中不仅描绘了股市的波动和股民的心理，还揭示了金融中介机构如何盈利，以及他们可能忽视客户利益的行为，如基金经理在基金亏损的情况下仍收取管理费等[^1^][^2^]。\n作者施韦德以其在华尔街的经历为基础，用轻松活泼的语言风格对世俗进行了无情的鞭笞，同时蕴含着投资智慧，这些内容至今仍具有现实意义[^1^][^2^]。\n总的来说，《客户的游艇在哪里》不仅是一本关于华尔街闹剧的书，它还提供了对投资市场的深刻洞察和批评。\n我又问了 我最近看过的书 《毛泽东点评历史人物》书籍内容 讯飞星火没有这方面内容，抱歉，我还没有学习到关于这个话题的内容，无法提供相关信息。您可以选择其他问题，我将努力为您解答。\n通义千问有的，举了几个例子和一些总结的话，也是可以的没啥问题。\n我记得这本书参考了1000本左右的其他书籍。后面最后一章用了几千字或者近万字来罗列作者的参考的书目。好多人的传记。\n读书方面，可能限于问题的问法，和展示答案的算法或者其他因素。 读书思考还是有点用的。可能AI设计的如此。让人类还有点颜面？ 故意让让人类？\n绘画 游戏 其他 AI绘画那是一个绝字。 虽然手啥的 可能还不行。但是其他都不错了。 根据提示词 可以画出来一个游戏角色，演绎一段视频， 游戏现在看上去和电影工程其实差不多了。尤其一些科幻电影和游戏唯一不同的就是你不能操作控制。 现实中如果机器人替代了人类大部分劳动，人类只能像《黑客帝国》那样一遍一遍的战斗看看能不能见到最后的boss 机器大脑。 硅基生命替代碳基生命，按照周期表，按照进化，我感觉硅基更先进一点，目前差的就是人类黑洞一般恐怖的大脑所具有的创造型。 《银河系漫游指南》有个外星人眼睛是黑洞。每个人的眼睛看上去都是像黑洞的。\n">
+<meta property='og:url' content='http://localhost:1313/post/articles0001/'>
+<meta property='og:site_name' content='ACEVS'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-10-20T17:08:04&#43;08:00'/><meta property='article:modified_time' content='2024-10-20T17:08:04&#43;08:00'/>
+<meta name="twitter:title" content="AI再次尝试">
+<meta name="twitter:description" content="不少博主用AI编程实现blog 的各种效果 确实很强，之前也测试过不少AI 讯飞星火，通义千问，chagpt等等 可以参考之前的一些post 仪式感 礼仪 炫富 看看AI的回答 – ACEVS 我把写的文章给ai读取，得到一些反馈 – ACEVS\n程序方面 我问通义千问通义tongyi.ai_你的全能AI助手-通义千问怎么部署hugo 到 github 我看了步骤简单明了，比我写的好多了。 再比如部署完到 username.github.io 看page页面时候如果发现404 你再问通义千问 一下子出来4.5种情况。提示你去检查核对和解决办法都有。 你再问hugo 如何github actions 提高效率，又是一阵答案。还有注释。 讯飞星火讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞依旧是如此。实例讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞 程序方面很强很高效.\n读书方面 我问 客户的游艇在哪里 AI没有意识到是书籍，直接告诉我了几种现实中寻找游艇的方法. 我问 《客户的游艇在哪里 》书籍内容的时候，回答还是凑合的。 比如讯飞星火的 还会标注参考资料。链接查看讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞 通义千问回答差不多，就是没有标注参考资料。\n[!NOTE] 《客户的游艇在哪里》是一本深入揭示华尔街金融界内幕的书籍，由美国作家施韦德撰写，孙建和姚洁翻译，于2010年4月1日由机械工业出版社出版[^1^][^2^]。\n这本书通过讲述1929年股市崩盘前后的故事，展示了投机者们的行为模式和心理状态。书中不仅描绘了股市的波动和股民的心理，还揭示了金融中介机构如何盈利，以及他们可能忽视客户利益的行为，如基金经理在基金亏损的情况下仍收取管理费等[^1^][^2^]。\n作者施韦德以其在华尔街的经历为基础，用轻松活泼的语言风格对世俗进行了无情的鞭笞，同时蕴含着投资智慧，这些内容至今仍具有现实意义[^1^][^2^]。\n总的来说，《客户的游艇在哪里》不仅是一本关于华尔街闹剧的书，它还提供了对投资市场的深刻洞察和批评。\n我又问了 我最近看过的书 《毛泽东点评历史人物》书籍内容 讯飞星火没有这方面内容，抱歉，我还没有学习到关于这个话题的内容，无法提供相关信息。您可以选择其他问题，我将努力为您解答。\n通义千问有的，举了几个例子和一些总结的话，也是可以的没啥问题。\n我记得这本书参考了1000本左右的其他书籍。后面最后一章用了几千字或者近万字来罗列作者的参考的书目。好多人的传记。\n读书方面，可能限于问题的问法，和展示答案的算法或者其他因素。 读书思考还是有点用的。可能AI设计的如此。让人类还有点颜面？ 故意让让人类？\n绘画 游戏 其他 AI绘画那是一个绝字。 虽然手啥的 可能还不行。但是其他都不错了。 根据提示词 可以画出来一个游戏角色，演绎一段视频， 游戏现在看上去和电影工程其实差不多了。尤其一些科幻电影和游戏唯一不同的就是你不能操作控制。 现实中如果机器人替代了人类大部分劳动，人类只能像《黑客帝国》那样一遍一遍的战斗看看能不能见到最后的boss 机器大脑。 硅基生命替代碳基生命，按照周期表，按照进化，我感觉硅基更先进一点，目前差的就是人类黑洞一般恐怖的大脑所具有的创造型。 《银河系漫游指南》有个外星人眼睛是黑洞。每个人的眼睛看上去都是像黑洞的。\n">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu14767566042683997439.png" width="300"
+                            height="308" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">ACEVS</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/articles0001/">AI再次尝试</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Oct 20, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>不少博主用AI编程实现blog 的各种效果
+确实很强，之前也测试过不少AI
+讯飞星火，通义千问，chagpt等等
+可以参考之前的一些post
+<a class="link" href="https://acevs.com/?p=3048"  target="_blank" rel="noopener"
+    >仪式感 礼仪 炫富 看看AI的回答 – ACEVS</a>
+<a class="link" href="https://acevs.com/?p=3063"  target="_blank" rel="noopener"
+    >我把写的文章给ai读取，得到一些反馈 – ACEVS</a></p>
+<h2 id="程序方面">程序方面
+</h2><p>我问通义千问<a class="link" href="https://tongyi.aliyun.com/"  target="_blank" rel="noopener"
+    >通义tongyi.ai_你的全能AI助手-通义千问</a>怎么部署hugo 到 github
+我看了步骤简单明了，比我写的好多了。
+再比如部署完到 username.github.io 看page页面时候如果发现404
+你再问通义千问 一下子出来4.5种情况。提示你去检查核对和解决办法都有。
+你再问hugo 如何github actions 提高效率，又是一阵答案。还有注释。
+讯飞星火<a class="link" href="https://xinghuo.xfyun.cn/desk"  target="_blank" rel="noopener"
+    >讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞</a>依旧是如此。实例<a class="link" href="https://xinghuo.xfyun.cn/share?key=aaf4216805eaa280120ebf49b9d6ca5b"  target="_blank" rel="noopener"
+    >讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞</a>
+程序方面很强很高效.</p>
+<h2 id="读书方面">读书方面
+</h2><p>我问  客户的游艇在哪里
+AI没有意识到是书籍，直接告诉我了几种现实中寻找游艇的方法.
+我问 《客户的游艇在哪里 》书籍内容的时候，回答还是凑合的。
+比如讯飞星火的 还会标注参考资料。链接查看<a class="link" href="https://xinghuo.xfyun.cn/share?key=a7fbbaea5fc7f3d7eeb59182127d9058"  target="_blank" rel="noopener"
+    >讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞</a>
+通义千问回答差不多，就是没有标注参考资料。</p>
+<blockquote>
+<p>[!NOTE]
+<strong>《客户的游艇在哪里》是一本深入揭示华尔街金融界内幕的书籍，由美国作家施韦德撰写，孙建和姚洁翻译，于2010年4月1日由机械工业出版社出版</strong>[^1^][^2^]。</p>
+<p>这本书通过讲述1929年股市崩盘前后的故事，展示了投机者们的行为模式和心理状态。书中不仅描绘了股市的波动和股民的心理，还揭示了金融中介机构如何盈利，以及他们可能忽视客户利益的行为，如基金经理在基金亏损的情况下仍收取管理费等[^1^][^2^]。</p>
+<p>作者施韦德以其在华尔街的经历为基础，用轻松活泼的语言风格对世俗进行了无情的鞭笞，同时蕴含着投资智慧，这些内容至今仍具有现实意义[^1^][^2^]。</p>
+<p>总的来说，《客户的游艇在哪里》不仅是一本关于华尔街闹剧的书，它还提供了对投资市场的深刻洞察和批评。</p>
+</blockquote>
+<p>我又问了 我最近看过的书
+《毛泽东点评历史人物》书籍内容
+讯飞星火没有这方面内容，抱歉，我还没有学习到关于这个话题的内容，无法提供相关信息。您可以选择其他问题，我将努力为您解答。</p>
+<p>通义千问有的，举了几个例子和一些总结的话，也是可以的没啥问题。</p>
+<p>我记得这本书参考了1000本左右的其他书籍。后面最后一章用了几千字或者近万字来罗列作者的参考的书目。好多人的传记。</p>
+<p>读书方面，可能限于问题的问法，和展示答案的算法或者其他因素。
+读书思考还是有点用的。可能AI设计的如此。让人类还有点颜面？
+故意让让人类？</p>
+<h2 id="绘画-游戏-其他">绘画 游戏 其他
+</h2><p>AI绘画那是一个绝字。
+虽然手啥的  可能还不行。但是其他都不错了。
+根据提示词 可以画出来一个游戏角色，演绎一段视频，
+游戏现在看上去和电影工程其实差不多了。尤其一些科幻电影和游戏唯一不同的就是你不能操作控制。
+现实中如果机器人替代了人类大部分劳动，人类只能像《黑客帝国》那样一遍一遍的战斗看看能不能见到最后的boss 机器大脑。
+硅基生命替代碳基生命，按照周期表，按照进化，我感觉硅基更先进一点，目前差的就是人类黑洞一般恐怖的大脑所具有的创造型。
+《银河系漫游指南》有个外星人眼睛是黑洞。每个人的眼睛看上去都是像黑洞的。</p>
+<p>我问了AI DeepMind打败了人类的世界冠军没有
+DeepMind开发了一个名为AlphaStar的人工智能系统，专门用于玩《星际争霸2》。AlphaStar在与《星际争霸2》的职业选手进行的展示比赛中表现出了高水平的游戏技能，但AlphaStar并不是正式的世界冠军。
+至于《星际争霸2》的世界冠军，则通常指的是在各类国际性大赛中获胜的职业选手。例如，在2023年的IEM卡托维兹站比赛中，中国选手李培楠（ID：Oliveira，曾用ID：TIME）赢得了冠军，成为首位夺得《星际争霸2》世界冠军的中国选手。在此之前，世界冠军多由韩国选手获得。</p>
+<p>rts游戏难度比围棋高点 对于电脑来说的原因如下：
+AlphaGo下围棋，可能的下法一共有10的170次方，这个数字比整个宇宙中的原子数10的80次方都多。而这对于星际争霸来说简直是小儿科。
+星际争霸在每一瞬间都有10的26次方种可能的操作——几乎无法计算。尽管如此，AI被限制于以人类的速度操作，这迫使其通过制定战略来取胜，而不是通过一系列超人类的无敌操作来轰炸其人类对手。</p>
+<p>星际争霸2被限制的AI胜率已经超越了人类。</p>
+<h2 id="选择">选择
+</h2><p>都都多实践吧。喜欢干啥就干啥。
+刚才看到，机器狗泰山开始测试，托运几十千克垃圾或者物资上下山。
+有人问啥时候可以骑狗上山呀？</p>
+<p>参考
+<a class="link" href="https://new.qq.com/rain/a/20200419A0B2BT00"  target="_blank" rel="noopener"
+    >Deepmind AI在《星际争霸2》血虐99.8％人类，登顶宗师段位_腾讯新闻</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script src="//cdn.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js"></script>
+<div id="tcomment"></div>
+<style>
+    .twikoo {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    :root[data-scheme="dark"] {
+        --twikoo-body-text-color-main: rgba(255, 255, 255, 0.9);
+        --twikoo-body-text-color: rgba(255, 255, 255, 0.7);
+    }
+    .twikoo .el-input-group__prepend,
+    .twikoo .tk-action-icon,
+    .twikoo .tk-submit-action-icon,
+    .twikoo .tk-time,
+    .twikoo .tk-comments-no,
+    .twikoo .tk-comments-count {
+        color: var(--twikoo-body-text-color);
+    }
+    .twikoo .el-input__inner,
+    .twikoo .el-textarea__inner,
+    .twikoo .tk-preview-container,
+    .twikoo .tk-content,
+    .twikoo .tk-nick,
+    .twikoo .tk-send {
+        color: var(--twikoo-body-text-color-main);
+    }
+    .twikoo .el-button{
+        color: var(--twikoo-body-text-color)!important;
+    }
+    .twikoo .el-input__count {
+        color: var(--twikoo-body-text-color) !important;
+    }
+    .OwO .OwO-body {
+        background-color: var(--body-background) !important;
+        color: var(--body-text-color) !important;
+    }
+</style><script>
+    twikoo.init({
+        envId: 'https:\/\/acevs-twikoo.hf.space',
+        el: '#tcomment',region: 'ap-shanghai',})
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 ACEVS
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.29.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.e1f2480e6381068c0c16f8df6132e7904a2c2c0b5a7a15e782934b7c9da624ac.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
