@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="最早折腾的是blowfish模版， 因为npm的问题导致打开powershell 和vscode chrome新页面启动卡顿 开始卸载2个chrome新装插件，没有效果，没有重启，第二天继续卡。 全局npm卸载了blowfish-tools，重启后恢复，正常。 想着继续不用npm折腾blowfish，先加个评论功能，选择了twikoo。 发现没有啥可以参考的教程。自己也懒得研究。\ntwikoo需要先跑起来。这个是独立的模块。 两部分组成，数据库和部署环境。 部署环境vercel被墙了。 云函数部署 | Twikoo 文档 netlify需要身份验证，身份证什么的。魔法上网不行，不开也不行。测试2天多个邮箱都不行。放弃。邮箱用的gmail和github也不行。 huggingface 目前还能用。 按照官方的教程就行。\nmongodb+srv://twname:mmmmmmmmmmmmm@twikoo.hphfd.mongodb.net/?retryWrites=true&amp;w=majority&amp;appName=twikoo 代码 这个地方name如上图 密码也是 没有箭头括号引号。部署成功后会提示\n&#34;code&#34;:100, &#34;message&#34;:&#34;Twiko0云函数运行正常，请参考https://twik &#34;version&#34;:&#34;1.6.39&#34; 上面提到blowfish 功能 全面，图片用的也多，咱不用cdn，所以没啥美化效果。 blowfish没看到添加twikoo的教程。就没折腾。\nhugo换模版发现配置文件不同有用yaml和toml配置的。开始不懂。以为挺麻烦。看了教程挺复杂感觉。 我想要直接换个仓库部署，其实新建一个github仓库就行。 我直接换了个号重新建仓库。这个是新的问题起源。\n这次模版选择了hugo stack 看着简单教程多。 同样教程多的papermode 和 fixlt等 hexo的模版教程更多 主要就是twikoo留言系统的。 各种查资料没有遇到什么大问题。 stack的模版配置调试文件在blog&ndash;themes-stack-config.yaml里面设置 没有加太多东西. 这个教程加了不少. Hugo Stack主题配置与使用 | Bore&rsquo;s Notes 期间用了ai解决一些问题,感觉ai不错.代码问题.比较信赖ai,这也是后面累计浪费几小时的根源.\n我看.ssh/id_rsa文件只有一个.我还把原来那个复制到别的文件夹(错误操作)重新获取id_rsa. git push时候提示要么权限 也么仓库不在. 我问ai 一台电脑两个github账号,ssh权限,他告诉了,操作步骤,我按着操作了一遍. git push时候提示要么权限 也么仓库不在. 我看.ssh/id_rsa文件只有一个. 讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞 ai发的我能做好一部分,有的却不行 编辑或创建~/.ssh/config文件,这个相当于申明or路由表\n# Account 1 Host github.com-account1 HostName github.com User git IdentityFile ~/.ssh/id_rsa_account1 # Account 2 Host github.com-account2 HostName github.com User git IdentityFile ~/.ssh/id_rsa_account2 比如下图repo就是你的name/name.github.io这个我不知道,\n">
+<title>hugo 第2次折腾</title>
+
+<link rel='canonical' href='http://localhost:1313/post/hugo-%E7%AC%AC2%E6%AC%A1%E6%8A%98%E8%85%BE/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="hugo 第2次折腾">
+<meta property='og:description' content="最早折腾的是blowfish模版， 因为npm的问题导致打开powershell 和vscode chrome新页面启动卡顿 开始卸载2个chrome新装插件，没有效果，没有重启，第二天继续卡。 全局npm卸载了blowfish-tools，重启后恢复，正常。 想着继续不用npm折腾blowfish，先加个评论功能，选择了twikoo。 发现没有啥可以参考的教程。自己也懒得研究。\ntwikoo需要先跑起来。这个是独立的模块。 两部分组成，数据库和部署环境。 部署环境vercel被墙了。 云函数部署 | Twikoo 文档 netlify需要身份验证，身份证什么的。魔法上网不行，不开也不行。测试2天多个邮箱都不行。放弃。邮箱用的gmail和github也不行。 huggingface 目前还能用。 按照官方的教程就行。\nmongodb+srv://twname:mmmmmmmmmmmmm@twikoo.hphfd.mongodb.net/?retryWrites=true&amp;w=majority&amp;appName=twikoo 代码 这个地方name如上图 密码也是 没有箭头括号引号。部署成功后会提示\n&#34;code&#34;:100, &#34;message&#34;:&#34;Twiko0云函数运行正常，请参考https://twik &#34;version&#34;:&#34;1.6.39&#34; 上面提到blowfish 功能 全面，图片用的也多，咱不用cdn，所以没啥美化效果。 blowfish没看到添加twikoo的教程。就没折腾。\nhugo换模版发现配置文件不同有用yaml和toml配置的。开始不懂。以为挺麻烦。看了教程挺复杂感觉。 我想要直接换个仓库部署，其实新建一个github仓库就行。 我直接换了个号重新建仓库。这个是新的问题起源。\n这次模版选择了hugo stack 看着简单教程多。 同样教程多的papermode 和 fixlt等 hexo的模版教程更多 主要就是twikoo留言系统的。 各种查资料没有遇到什么大问题。 stack的模版配置调试文件在blog&ndash;themes-stack-config.yaml里面设置 没有加太多东西. 这个教程加了不少. Hugo Stack主题配置与使用 | Bore&rsquo;s Notes 期间用了ai解决一些问题,感觉ai不错.代码问题.比较信赖ai,这也是后面累计浪费几小时的根源.\n我看.ssh/id_rsa文件只有一个.我还把原来那个复制到别的文件夹(错误操作)重新获取id_rsa. git push时候提示要么权限 也么仓库不在. 我问ai 一台电脑两个github账号,ssh权限,他告诉了,操作步骤,我按着操作了一遍. git push时候提示要么权限 也么仓库不在. 我看.ssh/id_rsa文件只有一个. 讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞 ai发的我能做好一部分,有的却不行 编辑或创建~/.ssh/config文件,这个相当于申明or路由表\n# Account 1 Host github.com-account1 HostName github.com User git IdentityFile ~/.ssh/id_rsa_account1 # Account 2 Host github.com-account2 HostName github.com User git IdentityFile ~/.ssh/id_rsa_account2 比如下图repo就是你的name/name.github.io这个我不知道,\n">
+<meta property='og:url' content='http://localhost:1313/post/hugo-%E7%AC%AC2%E6%AC%A1%E6%8A%98%E8%85%BE/'>
+<meta property='og:site_name' content='ACEVS'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-11-05T08:56:15&#43;08:00'/><meta property='article:modified_time' content='2024-11-05T08:56:15&#43;08:00'/>
+<meta name="twitter:title" content="hugo 第2次折腾">
+<meta name="twitter:description" content="最早折腾的是blowfish模版， 因为npm的问题导致打开powershell 和vscode chrome新页面启动卡顿 开始卸载2个chrome新装插件，没有效果，没有重启，第二天继续卡。 全局npm卸载了blowfish-tools，重启后恢复，正常。 想着继续不用npm折腾blowfish，先加个评论功能，选择了twikoo。 发现没有啥可以参考的教程。自己也懒得研究。\ntwikoo需要先跑起来。这个是独立的模块。 两部分组成，数据库和部署环境。 部署环境vercel被墙了。 云函数部署 | Twikoo 文档 netlify需要身份验证，身份证什么的。魔法上网不行，不开也不行。测试2天多个邮箱都不行。放弃。邮箱用的gmail和github也不行。 huggingface 目前还能用。 按照官方的教程就行。\nmongodb+srv://twname:mmmmmmmmmmmmm@twikoo.hphfd.mongodb.net/?retryWrites=true&amp;w=majority&amp;appName=twikoo 代码 这个地方name如上图 密码也是 没有箭头括号引号。部署成功后会提示\n&#34;code&#34;:100, &#34;message&#34;:&#34;Twiko0云函数运行正常，请参考https://twik &#34;version&#34;:&#34;1.6.39&#34; 上面提到blowfish 功能 全面，图片用的也多，咱不用cdn，所以没啥美化效果。 blowfish没看到添加twikoo的教程。就没折腾。\nhugo换模版发现配置文件不同有用yaml和toml配置的。开始不懂。以为挺麻烦。看了教程挺复杂感觉。 我想要直接换个仓库部署，其实新建一个github仓库就行。 我直接换了个号重新建仓库。这个是新的问题起源。\n这次模版选择了hugo stack 看着简单教程多。 同样教程多的papermode 和 fixlt等 hexo的模版教程更多 主要就是twikoo留言系统的。 各种查资料没有遇到什么大问题。 stack的模版配置调试文件在blog&ndash;themes-stack-config.yaml里面设置 没有加太多东西. 这个教程加了不少. Hugo Stack主题配置与使用 | Bore&rsquo;s Notes 期间用了ai解决一些问题,感觉ai不错.代码问题.比较信赖ai,这也是后面累计浪费几小时的根源.\n我看.ssh/id_rsa文件只有一个.我还把原来那个复制到别的文件夹(错误操作)重新获取id_rsa. git push时候提示要么权限 也么仓库不在. 我问ai 一台电脑两个github账号,ssh权限,他告诉了,操作步骤,我按着操作了一遍. git push时候提示要么权限 也么仓库不在. 我看.ssh/id_rsa文件只有一个. 讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞 ai发的我能做好一部分,有的却不行 编辑或创建~/.ssh/config文件,这个相当于申明or路由表\n# Account 1 Host github.com-account1 HostName github.com User git IdentityFile ~/.ssh/id_rsa_account1 # Account 2 Host github.com-account2 HostName github.com User git IdentityFile ~/.ssh/id_rsa_account2 比如下图repo就是你的name/name.github.io这个我不知道,\n">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu14767566042683997439.png" width="300"
+                            height="308" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">ACEVS</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/hugo-%E7%AC%AC2%E6%AC%A1%E6%8A%98%E8%85%BE/">hugo 第2次折腾</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Nov 05, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>最早折腾的是blowfish模版，
+因为npm的问题导致打开powershell 和vscode chrome新页面启动卡顿
+开始卸载2个chrome新装插件，没有效果，没有重启，第二天继续卡。
+全局npm卸载了blowfish-tools，重启后恢复，正常。
+想着继续不用npm折腾blowfish，先加个评论功能，选择了twikoo。
+发现没有啥可以参考的教程。自己也懒得研究。</p>
+<p>twikoo需要先跑起来。这个是独立的模块。
+两部分组成，数据库和部署环境。
+部署环境vercel被墙了。
+<a class="link" href="https://twikoo.js.org/backend.html#netlify-%E9%83%A8%E7%BD%B2"  target="_blank" rel="noopener"
+    >云函数部署 | Twikoo 文档</a>
+netlify需要身份验证，身份证什么的。魔法上网不行，不开也不行。测试2天多个邮箱都不行。放弃。邮箱用的gmail和github也不行。
+huggingface 目前还能用。
+按照官方的教程就行。</p>
+<pre tabindex="0"><code>mongodb+srv://twname:mmmmmmmmmmmmm@twikoo.hphfd.mongodb.net/?retryWrites=true&amp;w=majority&amp;appName=twikoo
+</code></pre><p>代码 这个地方name如上图 密码也是 没有箭头括号引号。部署成功后会提示</p>
+<pre tabindex="0"><code>&#34;code&#34;:100,
+&#34;message&#34;:&#34;Twiko0云函数运行正常，请参考https://twik
+&#34;version&#34;:&#34;1.6.39&#34;
+</code></pre><p>上面提到blowfish 功能 全面，图片用的也多，咱不用cdn，所以没啥美化效果。
+blowfish没看到添加twikoo的教程。就没折腾。</p>
+<p>hugo换模版发现配置文件不同有用yaml和toml配置的。开始不懂。以为挺麻烦。看了教程挺复杂感觉。
+我想要直接换个仓库部署，其实新建一个github仓库就行。
+我直接换了个号重新建仓库。这个是新的问题起源。</p>
+<p>这次模版选择了hugo stack 看着简单教程多。 同样教程多的papermode 和 fixlt等
+hexo的模版教程更多 主要就是twikoo留言系统的。
+各种查资料没有遇到什么大问题。
+stack的模版配置调试文件在blog&ndash;themes-stack-config.yaml里面设置
+没有加太多东西.
+这个教程加了不少.
+<a class="link" href="https://iwyang.github.io/archives/3bf3725e/"  target="_blank" rel="noopener"
+    >Hugo Stack主题配置与使用 | Bore&rsquo;s Notes</a>
+期间用了ai解决一些问题,感觉ai不错.代码问题.比较信赖ai,这也是后面累计浪费几小时的根源.</p>
+<p>我看.ssh/id_rsa文件只有一个.我还把原来那个复制到别的文件夹(错误操作)重新获取id_rsa.
+git push时候提示要么权限 也么仓库不在.
+我问ai 一台电脑两个github账号,ssh权限,他告诉了,操作步骤,我按着操作了一遍.
+git push时候提示要么权限 也么仓库不在.
+我看.ssh/id_rsa文件只有一个.
+<a class="link" href="https://xinghuo.xfyun.cn/share?key=2037750c29cda24f821f47e98ded2bbb"  target="_blank" rel="noopener"
+    >讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞</a>
+ai发的我能做好一部分,有的却不行
+编辑或创建<code>~/.ssh/config</code>文件,这个相当于申明or路由表</p>
+<pre tabindex="0"><code># Account 1
+Host github.com-account1
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_account1
+
+# Account 2
+Host github.com-account2
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_account2
+</code></pre><p>比如下图repo就是你的name/name.github.io这个我不知道,</p>
+<pre tabindex="0"><code>git clone git@github.com-account1:username/repo.git
+git clone git@github.com-account2:username/repo.git
+</code></pre><p>后来知道了,按照标准还是不行.
+主要错误我发现是权限那步需要输入密码的时候 显示的rsa不是我要认证的那个id_rsa_2名字我申请的时候不同的.
+git push时候提示要么权限(密码错误 和正确都是权限问题) 也么仓库不在.</p>
+<p>我开始回忆第一次git仓库那个教程,认证的 是
+git config &ndash;global user.name
+git config &ndash;global user.email
+我也是用ai搜索的.
+撤销全局
+git config &ndash;global &ndash;unset user.name
+git config &ndash;global &ndash;unset user.email
+下面是错误代码
+git config &ndash;global &ndash;unset user.acevs
+git config &ndash;global &ndash;unset user.acevs
+正确代码是
+git config &ndash;global &ndash;unset user.acevs  &ldquo;个人github账号名&rdquo;
+git config &ndash;global &ndash;unset user.acevs  &ldquo;个人github账号邮箱&rdquo;
+撤销全局后。我也没有设置local系统级权限
+git config &ndash;local user.name &ldquo;个人github账号名&rdquo;
+git config &ndash;local user.email &ldquo;个人github账号邮箱&rdquo;
+通过一个list命令可以看看全局下面还有没有&ndash;global账号了
+没有就ok了。</p>
+<p>然后remove远程仓库。second.github.com是你.ssh/config的host后面的地址
+不是hostname后面的地址
+格式如下</p>
+<pre tabindex="0"><code>git remote add origin git@second.github.com:acevsa/acevsa.github.io.git
+</code></pre><p>不确定成功链接 就用查看链接仓库名字
+git remote -v</p>
+<p>然后一路操作上传成功
+git init
+git branch -M main
+git status
+git add .<br>
+git commit -m &ldquo;first commit&rdquo;<br>
+git push -u origin main
+git push -u origin main &ndash;force</p>
+<p>后面page设置绑定域名简单,可以直接github绑定域名
+以及actions设置可以简单也可以复杂就看你的插件多不多和需求了也是略过</p>
+<p>twikoo第一次如果点击的设置的密码一定要记住,一定也设置密码.不然部署环境可能就错了需要重新授权一下才行.
+vercel和huggingface 可以用一个mongodb.com数据库 我是都部署了.
+云函数能注册都注册上.说不定啥时候用一下.
+耗费时间不计其数,收获一点点.
+ai虽然正确但是有的标点和逻辑什么的确实不好理解.没有事例.
+所以还得搜索看实例.</p>
+<p>hugo搭建参考
+<a class="link" href="https://zz2summer.github.io/github-pages-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"  target="_blank" rel="noopener"
+    >Github Pages + Hugo 搭建个人博客 - 渣渣的夏天</a>
+<a class="link" href="https://ratmomo.github.io/p/2024/06/%E4%BD%BF%E7%94%A8-hugo--github-pages-%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"  target="_blank" rel="noopener"
+    >使用 Hugo + Github Pages 部署个人博客</a>
+<a class="link" href="https://stilig.me/posts/building-hugo/#%E5%88%A9%E7%94%A8-vercel-%E9%83%A8%E7%BD%B2-hugo"  target="_blank" rel="noopener"
+    >从零开始的 Hugo 博客搭建 - Stilig&rsquo;s blog</a>
+<a class="link" href="https://blog.csdn.net/weixin_52473454/article/details/131092259?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=hugo%20github%20%E4%BF%9D%E5%A7%86&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-3-131092259.142%5Ev100%5Epc_search_result_base1&amp;spm=1018.2226.3001.4187"  target="_blank" rel="noopener"
+    >使用Hugo+Github从0开始免费搭建个人博客_hugo github-CSDN博客</a></p>
+<p>twikoo搭建参考
+<a class="link" href="https://www.sulvblog.cn/posts/blog/hugo_twikoo/"  target="_blank" rel="noopener"
+    >Hugo博客添加Twikoo评论 | Sulv&rsquo;s Blog</a>
+<a class="link" href="https://twikoo.js.org/backend.html"  target="_blank" rel="noopener"
+    >云函数部署 | Twikoo 文档</a></p>
+<p>twikoo设置参考
+<a class="link" href="https://thirdshire.com/twikoo-tutorial/#%E6%9F%A5%E7%9C%8B%E4%B8%BB%E9%A2%98%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81twikoo"  target="_blank" rel="noopener"
+    >在静态博客里添加Twikoo评论系统，并配置邮箱和TG通知</a></p>
+<p>hugo stack主题配置
+<a class="link" href="https://stilig.me/posts/building-hugo/#%E5%88%A9%E7%94%A8-vercel-%E9%83%A8%E7%BD%B2-hugo"  target="_blank" rel="noopener"
+    >从零开始的 Hugo 博客搭建 - Stilig&rsquo;s blog</a></p>
+<p>github多个账号ssh设置参考
+<a class="link" href="https://www.jianshu.com/p/c4b11b0af7c1"  target="_blank" rel="noopener"
+    >一台电脑双 GitHub 账户配置，同时两个 SSH 密钥 - 简书</a>
+<a class="link" href="https://blog.csdn.net/qq_46450354/article/details/129997855"  target="_blank" rel="noopener"
+    >一台电脑双 GitHub 账户配置，同时两个 SSH 密钥_fatal: &ndash;local can only be used inside a git repos-CSDN博客</a>
+<a class="link" href="https://www.jianshu.com/p/8c8cc1b780e2"  target="_blank" rel="noopener"
+    >多个Git配置多个ssh密钥 - 简书</a></p>
+<p>之前折腾文章
+<a class="link" href="https://acevs.com/3625/"  target="_blank" rel="noopener"
+    >npm blowfish hugo – ACEVS</a>
+<a class="link" href="https://acevs.com/3385/"  target="_blank" rel="noopener"
+    >hugo安装 – ACEVS</a></p>
+<p>最后
+测试一下stack的hugo
+<a class="link" href="https://stack.aceego.com/"  target="_blank" rel="noopener"
+    >ACEVS</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script src="//cdn.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js"></script>
+<div id="tcomment"></div>
+<style>
+    .twikoo {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    :root[data-scheme="dark"] {
+        --twikoo-body-text-color-main: rgba(255, 255, 255, 0.9);
+        --twikoo-body-text-color: rgba(255, 255, 255, 0.7);
+    }
+    .twikoo .el-input-group__prepend,
+    .twikoo .tk-action-icon,
+    .twikoo .tk-submit-action-icon,
+    .twikoo .tk-time,
+    .twikoo .tk-comments-no,
+    .twikoo .tk-comments-count {
+        color: var(--twikoo-body-text-color);
+    }
+    .twikoo .el-input__inner,
+    .twikoo .el-textarea__inner,
+    .twikoo .tk-preview-container,
+    .twikoo .tk-content,
+    .twikoo .tk-nick,
+    .twikoo .tk-send {
+        color: var(--twikoo-body-text-color-main);
+    }
+    .twikoo .el-button{
+        color: var(--twikoo-body-text-color)!important;
+    }
+    .twikoo .el-input__count {
+        color: var(--twikoo-body-text-color) !important;
+    }
+    .OwO .OwO-body {
+        background-color: var(--body-background) !important;
+        color: var(--body-text-color) !important;
+    }
+</style><script>
+    twikoo.init({
+        envId: 'https:\/\/acevs-twikoo.hf.space',
+        el: '#tcomment',region: 'ap-shanghai',})
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 ACEVS
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.29.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.e1f2480e6381068c0c16f8df6132e7904a2c2c0b5a7a15e782934b7c9da624ac.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

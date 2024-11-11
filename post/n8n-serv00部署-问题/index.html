@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="n8n一直没有体验上。 我的nas npm被我玩坏的了，懒得修复。不能部署。 win10ltsc 版本不行。无法安装市场和docker。 n8n也可以和其他云函数部署。但是发现有一键部署为啥不用serv00呢。 这个serv00虚拟机三个月不用就回收了账号。 教程放在最后的参考。我只记录问题。\nadded 1 package in 5s i.sh:line 309:/home/ace/.npm-global/bin/pnpm:Permission denied 提示没有权限。设置权限不行。卸载npm 重新安装不行。 这个问题输入 devil binexec on\n然后断开重连ssh\nls 显示n8n目录 进去 bash i.sh 自动执行sh脚本 自动卸载重新安装。 这也是我搞了七八次，最后还是安装成功的关键。\n后来还是提醒错误 Failed in 15.9s at /home/ace/.local/share/pnpm/global/5/.pnpm/sqlite305.1.7/node modules/sqlite3 ELIFECYCLE Command failed with exit code 1. 【ERROR】n8n安装失败\n最后放弃PostgreSQL数据库\n用sqlite数据库成功了。估计我卸载过npm\u00a0配置环境有问题。\n数据库问题，代码思维就复杂了。我还想用代码搞定。 我想起还有控制面板，里面肯能就有直接管理数据库的。果然有。点击删除数据库就行。简单方便。\n[!NOTE] 在FreeBSD系统中，如果你需要删除PostgreSQL数据库，你可以使用dropdb命令。这个命令是PostgreSQL安装中的一部分。\n首先，你需要确定你要删除的数据库名称。然后，你可以使用以下命令删除数据库：\ndropdb [option&hellip;] dbname\n这里是一个删除名为mydatabase的数据库的例子：\ndropdb mydatabase\n在执行这个命令之前，请确保你有足够的权限来删除数据库，并且要小心，因为这将删除数据库及其所有内容。\n如果你是在问如何在FreeBSD中卸载PostgreSQL数据库软件，那么你需要使用Ports系统来完成。以下是卸载PostgreSQL的步骤：\n首先，你需要知道你安装的PostgreSQL版本。你可以通过以下命令来查找：\npkg info | grep postgresql\n然后，你可以使用pkg delete命令来卸载它：\n">
+<title>n8n serv00部署 问题</title>
+
+<link rel='canonical' href='http://localhost:1313/post/n8n-serv00%E9%83%A8%E7%BD%B2-%E9%97%AE%E9%A2%98/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="n8n serv00部署 问题">
+<meta property='og:description' content="n8n一直没有体验上。 我的nas npm被我玩坏的了，懒得修复。不能部署。 win10ltsc 版本不行。无法安装市场和docker。 n8n也可以和其他云函数部署。但是发现有一键部署为啥不用serv00呢。 这个serv00虚拟机三个月不用就回收了账号。 教程放在最后的参考。我只记录问题。\nadded 1 package in 5s i.sh:line 309:/home/ace/.npm-global/bin/pnpm:Permission denied 提示没有权限。设置权限不行。卸载npm 重新安装不行。 这个问题输入 devil binexec on\n然后断开重连ssh\nls 显示n8n目录 进去 bash i.sh 自动执行sh脚本 自动卸载重新安装。 这也是我搞了七八次，最后还是安装成功的关键。\n后来还是提醒错误 Failed in 15.9s at /home/ace/.local/share/pnpm/global/5/.pnpm/sqlite305.1.7/node modules/sqlite3 ELIFECYCLE Command failed with exit code 1. 【ERROR】n8n安装失败\n最后放弃PostgreSQL数据库\n用sqlite数据库成功了。估计我卸载过npm\u00a0配置环境有问题。\n数据库问题，代码思维就复杂了。我还想用代码搞定。 我想起还有控制面板，里面肯能就有直接管理数据库的。果然有。点击删除数据库就行。简单方便。\n[!NOTE] 在FreeBSD系统中，如果你需要删除PostgreSQL数据库，你可以使用dropdb命令。这个命令是PostgreSQL安装中的一部分。\n首先，你需要确定你要删除的数据库名称。然后，你可以使用以下命令删除数据库：\ndropdb [option&hellip;] dbname\n这里是一个删除名为mydatabase的数据库的例子：\ndropdb mydatabase\n在执行这个命令之前，请确保你有足够的权限来删除数据库，并且要小心，因为这将删除数据库及其所有内容。\n如果你是在问如何在FreeBSD中卸载PostgreSQL数据库软件，那么你需要使用Ports系统来完成。以下是卸载PostgreSQL的步骤：\n首先，你需要知道你安装的PostgreSQL版本。你可以通过以下命令来查找：\npkg info | grep postgresql\n然后，你可以使用pkg delete命令来卸载它：\n">
+<meta property='og:url' content='http://localhost:1313/post/n8n-serv00%E9%83%A8%E7%BD%B2-%E9%97%AE%E9%A2%98/'>
+<meta property='og:site_name' content='ACEVS'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-11-09T08:56:15&#43;08:00'/><meta property='article:modified_time' content='2024-11-09T08:56:15&#43;08:00'/>
+<meta name="twitter:title" content="n8n serv00部署 问题">
+<meta name="twitter:description" content="n8n一直没有体验上。 我的nas npm被我玩坏的了，懒得修复。不能部署。 win10ltsc 版本不行。无法安装市场和docker。 n8n也可以和其他云函数部署。但是发现有一键部署为啥不用serv00呢。 这个serv00虚拟机三个月不用就回收了账号。 教程放在最后的参考。我只记录问题。\nadded 1 package in 5s i.sh:line 309:/home/ace/.npm-global/bin/pnpm:Permission denied 提示没有权限。设置权限不行。卸载npm 重新安装不行。 这个问题输入 devil binexec on\n然后断开重连ssh\nls 显示n8n目录 进去 bash i.sh 自动执行sh脚本 自动卸载重新安装。 这也是我搞了七八次，最后还是安装成功的关键。\n后来还是提醒错误 Failed in 15.9s at /home/ace/.local/share/pnpm/global/5/.pnpm/sqlite305.1.7/node modules/sqlite3 ELIFECYCLE Command failed with exit code 1. 【ERROR】n8n安装失败\n最后放弃PostgreSQL数据库\n用sqlite数据库成功了。估计我卸载过npm\u00a0配置环境有问题。\n数据库问题，代码思维就复杂了。我还想用代码搞定。 我想起还有控制面板，里面肯能就有直接管理数据库的。果然有。点击删除数据库就行。简单方便。\n[!NOTE] 在FreeBSD系统中，如果你需要删除PostgreSQL数据库，你可以使用dropdb命令。这个命令是PostgreSQL安装中的一部分。\n首先，你需要确定你要删除的数据库名称。然后，你可以使用以下命令删除数据库：\ndropdb [option&hellip;] dbname\n这里是一个删除名为mydatabase的数据库的例子：\ndropdb mydatabase\n在执行这个命令之前，请确保你有足够的权限来删除数据库，并且要小心，因为这将删除数据库及其所有内容。\n如果你是在问如何在FreeBSD中卸载PostgreSQL数据库软件，那么你需要使用Ports系统来完成。以下是卸载PostgreSQL的步骤：\n首先，你需要知道你安装的PostgreSQL版本。你可以通过以下命令来查找：\npkg info | grep postgresql\n然后，你可以使用pkg delete命令来卸载它：\n">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu14767566042683997439.png" width="300"
+                            height="308" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">ACEVS</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/n8n-serv00%E9%83%A8%E7%BD%B2-%E9%97%AE%E9%A2%98/">n8n serv00部署 问题</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Nov 09, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>n8n一直没有体验上。
+我的nas npm被我玩坏的了，懒得修复。不能部署。
+win10ltsc 版本不行。无法安装市场和docker。
+n8n也可以和其他云函数部署。但是发现有一键部署为啥不用serv00呢。
+这个serv00虚拟机三个月不用就回收了账号。
+教程放在最后的参考。我只记录问题。</p>
+<p>added 1 package in 5s
+i.sh:line 309:/home/ace/.npm-global/bin/pnpm:Permission denied
+提示没有权限。设置权限不行。卸载npm 重新安装不行。
+这个问题输入
+devil binexec on<br>
+然后断开重连ssh</p>
+<p>ls 显示n8n目录 进去
+bash i.sh
+自动执行sh脚本
+自动卸载重新安装。
+这也是我搞了七八次，最后还是安装成功的关键。</p>
+<p>后来还是提醒错误
+Failed in 15.9s at /home/ace/.local/share/pnpm/global/5/.pnpm/sqlite305.1.7/node modules/sqlite3 ELIFECYCLE Command failed with exit code 1. 【ERROR】n8n安装失败</p>
+<p>最后放弃PostgreSQL数据库<br>
+用sqlite数据库成功了。估计我卸载过npm  配置环境有问题。</p>
+<p>数据库问题，代码思维就复杂了。我还想用代码搞定。
+我想起还有控制面板，里面肯能就有直接管理数据库的。果然有。点击删除数据库就行。简单方便。</p>
+<blockquote>
+<p>[!NOTE]
+在FreeBSD系统中，如果你需要删除PostgreSQL数据库，你可以使用dropdb命令。这个命令是PostgreSQL安装中的一部分。</p>
+<p>首先，你需要确定你要删除的数据库名称。然后，你可以使用以下命令删除数据库：</p>
+<p>dropdb [option&hellip;] dbname</p>
+<p>这里是一个删除名为mydatabase的数据库的例子：</p>
+<p>dropdb mydatabase</p>
+<p>在执行这个命令之前，请确保你有足够的权限来删除数据库，并且要小心，因为这将删除数据库及其所有内容。</p>
+<p>如果你是在问如何在FreeBSD中卸载PostgreSQL数据库软件，那么你需要使用Ports系统来完成。以下是卸载PostgreSQL的步骤：</p>
+<p>首先，你需要知道你安装的PostgreSQL版本。你可以通过以下命令来查找：</p>
+<p>pkg info | grep postgresql</p>
+<p>然后，你可以使用pkg delete命令来卸载它：</p>
+<p>pkg delete postgresqlX.Y.Z</p>
+<p>将X.Y.Z替换为你的实际版本号。</p>
+<p>最后，你可能还需要删除配置文件和数据目录，这通常位于/var/db/postgresql和/var/db/postgresql_db。</p>
+<p>请注意，在执行任何删除操作之前，确保你已经备份了所有重要数据。</p>
+</blockquote>
+<p>云函数部署n8n参考
+<a class="link" href="https://sspai.com/post/81749"  target="_blank" rel="noopener"
+    >每日一技：使用 Zeabur 部署 n8n 服务 - 少数派</a>
+<a class="link" href="https://www.bilibili.com/video/BV1e6sVeEEhR/?spm_id_from=333.788.recommend_more_video.0&amp;vd_source=2a74a36b72c9f3a8d76012a97bf29e19"  target="_blank" rel="noopener"
+    >N8N+huggingface,一款效率神器，AI利器，必备良品【免费云端电脑+AI，一键部署，工作自动化】_哔哩哔哩_bilibili</a></p>
+<p>serv00 部署 参考
+<a class="link" href="https://github.com/aigem/n8n-serv00/blob/main/README.md"  target="_blank" rel="noopener"
+    >n8n-serv00/README.md at main · aigem/n8n-serv00 · GitHub</a>
+<a class="link" href="https://www.bilibili.com/video/BV1PZy2YdErb/?vd_source=2a74a36b72c9f3a8d76012a97bf29e19"  target="_blank" rel="noopener"
+    >一键免费部署自动化工作流神器N8N 在十年免费主机上自动部署教程 N8N+serv00_哔哩哔哩_bilibili</a></p>
+<p>之前提及n8n
+<a class="link" href="https://acevs.com/3555/"  target="_blank" rel="noopener"
+    >ActivityPub – ACEVS</a>
+之前提及serv00
+<a class="link" href="https://acevs.com/3652/"  target="_blank" rel="noopener"
+    >免费虚拟主机serv00 – ACEVS</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script src="//cdn.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js"></script>
+<div id="tcomment"></div>
+<style>
+    .twikoo {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    :root[data-scheme="dark"] {
+        --twikoo-body-text-color-main: rgba(255, 255, 255, 0.9);
+        --twikoo-body-text-color: rgba(255, 255, 255, 0.7);
+    }
+    .twikoo .el-input-group__prepend,
+    .twikoo .tk-action-icon,
+    .twikoo .tk-submit-action-icon,
+    .twikoo .tk-time,
+    .twikoo .tk-comments-no,
+    .twikoo .tk-comments-count {
+        color: var(--twikoo-body-text-color);
+    }
+    .twikoo .el-input__inner,
+    .twikoo .el-textarea__inner,
+    .twikoo .tk-preview-container,
+    .twikoo .tk-content,
+    .twikoo .tk-nick,
+    .twikoo .tk-send {
+        color: var(--twikoo-body-text-color-main);
+    }
+    .twikoo .el-button{
+        color: var(--twikoo-body-text-color)!important;
+    }
+    .twikoo .el-input__count {
+        color: var(--twikoo-body-text-color) !important;
+    }
+    .OwO .OwO-body {
+        background-color: var(--body-background) !important;
+        color: var(--body-text-color) !important;
+    }
+</style><script>
+    twikoo.init({
+        envId: 'https:\/\/acevs-twikoo.hf.space',
+        el: '#tcomment',region: 'ap-shanghai',})
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 ACEVS
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.29.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.e1f2480e6381068c0c16f8df6132e7904a2c2c0b5a7a15e782934b7c9da624ac.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

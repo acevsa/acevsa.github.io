@@ -6,7 +6,664 @@
         <description>Recent content in Posts on ACEVS</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 04 Nov 2024 08:56:15 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 10 Nov 2024 08:56:15 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>孩子研学没去</title>
+        <link>http://localhost:1313/post/%E5%AD%A9%E5%AD%90%E7%A0%94%E5%AD%A6%E6%B2%A1%E5%8E%BB/</link>
+        <pubDate>Sun, 10 Nov 2024 08:56:15 +0800</pubDate>
+        
+        <guid>http://localhost:1313/post/%E5%AD%A9%E5%AD%90%E7%A0%94%E5%AD%A6%E6%B2%A1%E5%8E%BB/</guid>
+        <description>&lt;h2 id=&#34;先扯&#34;&gt;先扯
+&lt;/h2&gt;&lt;p&gt;游学的周卓.
+魔兽世界熊猫人之谜？
+还是炉石传说里面？
+周卓是个熊猫人，挺厉害的。
+不过在魔兽世界和炉石传说里面也是游学的，必须去西方世界学习。确实西方世界近几百年领先。中国也在奋起直追。中国要实现伟大复兴。美国要make great again，好多国家口号都是差不多的。首先是之前就强过，还要继续牛。好像祖传的一样哈~&lt;/p&gt;
+&lt;h2 id=&#34;学校研学&#34;&gt;学校研学
+&lt;/h2&gt;&lt;p&gt;两娃所在学校周五组织去极地海洋世界研学一天。
+自愿报名。价格218一个人。
+每个班大概都是有10个娃不去。
+我去极地海洋世界估计有十次左右了。
+前几年涨价，从最开始的60到现在的200-400价格没去查 贵了几倍了。&lt;/p&gt;
+&lt;p&gt;前几年看飞猪年卡，一个人200-400大概是 没去查订单，就办理全家4个人的年卡.
+去了五六次，五一.十一.有空就去，但是还是不想去 只是觉得交钱了不去白不去。
+地铁也有了去也方便不少，到了地方还得做1.2站公交车 ，当然也可以步行一公里左右抵达。
+之前价格低是各种馆的包含情况不同，比如没有海狮表演，没有56789d电影？忘记多少 d了。带3d双色眼镜，椅子会摇，会喷水。其他都一样就是主馆。白鲸爱心。海豚白鲸表演，就是那个伪虎鲸还是 虎鲸划算点 去看只有 上海有 。看过圣地亚哥虎鲸视频。看过虎鲸的群体捕杀海狮还是海豹。喷水柱捕鸟。聪明如人。如果没有人类，其他生物估计也会进化的如人类一样。就是成精了。&lt;/p&gt;
+&lt;p&gt;孩子这次是学校的找的大巴车，自备晕车药，呕吐袋。
+不去了，这些也不考虑了。长途出行一般 就是 考虑地铁火车飞机，老婆觉得安全第一。大巴车从来没有考虑过。确实地铁火车至少不会晕车。上厕所也方便，虽然现在有的大巴车也有厕所了。&lt;/p&gt;
+&lt;p&gt;没花的钱，老婆会想办法花掉的，这不今天去游乐场50一个人，最开始99一个人，估计游乐场快要关闭了。再回笼回笼资金。价格越来越低。带电的项目都关闭了。我带着漂移板，刷来刷去，看他们付费耍。完了3.4个小时大概。我也挺累的感觉。哈哈。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>n8n serv00部署 问题</title>
+        <link>http://localhost:1313/post/n8n-serv00%E9%83%A8%E7%BD%B2-%E9%97%AE%E9%A2%98/</link>
+        <pubDate>Sat, 09 Nov 2024 08:56:15 +0800</pubDate>
+        
+        <guid>http://localhost:1313/post/n8n-serv00%E9%83%A8%E7%BD%B2-%E9%97%AE%E9%A2%98/</guid>
+        <description>&lt;p&gt;n8n一直没有体验上。
+我的nas npm被我玩坏的了，懒得修复。不能部署。
+win10ltsc 版本不行。无法安装市场和docker。
+n8n也可以和其他云函数部署。但是发现有一键部署为啥不用serv00呢。
+这个serv00虚拟机三个月不用就回收了账号。
+教程放在最后的参考。我只记录问题。&lt;/p&gt;
+&lt;p&gt;added 1 package in 5s
+i.sh:line 309:/home/ace/.npm-global/bin/pnpm:Permission denied
+提示没有权限。设置权限不行。卸载npm 重新安装不行。
+这个问题输入
+devil binexec on&lt;br&gt;
+然后断开重连ssh&lt;/p&gt;
+&lt;p&gt;ls 显示n8n目录 进去
+bash i.sh
+自动执行sh脚本
+自动卸载重新安装。
+这也是我搞了七八次，最后还是安装成功的关键。&lt;/p&gt;
+&lt;p&gt;后来还是提醒错误
+Failed in 15.9s at /home/ace/.local/share/pnpm/global/5/.pnpm/sqlite305.1.7/node modules/sqlite3 ELIFECYCLE Command failed with exit code 1. 【ERROR】n8n安装失败&lt;/p&gt;
+&lt;p&gt;最后放弃PostgreSQL数据库&lt;br&gt;
+用sqlite数据库成功了。估计我卸载过npm  配置环境有问题。&lt;/p&gt;
+&lt;p&gt;数据库问题，代码思维就复杂了。我还想用代码搞定。
+我想起还有控制面板，里面肯能就有直接管理数据库的。果然有。点击删除数据库就行。简单方便。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]
+在FreeBSD系统中，如果你需要删除PostgreSQL数据库，你可以使用dropdb命令。这个命令是PostgreSQL安装中的一部分。&lt;/p&gt;
+&lt;p&gt;首先，你需要确定你要删除的数据库名称。然后，你可以使用以下命令删除数据库：&lt;/p&gt;
+&lt;p&gt;dropdb [option&amp;hellip;] dbname&lt;/p&gt;
+&lt;p&gt;这里是一个删除名为mydatabase的数据库的例子：&lt;/p&gt;
+&lt;p&gt;dropdb mydatabase&lt;/p&gt;
+&lt;p&gt;在执行这个命令之前，请确保你有足够的权限来删除数据库，并且要小心，因为这将删除数据库及其所有内容。&lt;/p&gt;
+&lt;p&gt;如果你是在问如何在FreeBSD中卸载PostgreSQL数据库软件，那么你需要使用Ports系统来完成。以下是卸载PostgreSQL的步骤：&lt;/p&gt;
+&lt;p&gt;首先，你需要知道你安装的PostgreSQL版本。你可以通过以下命令来查找：&lt;/p&gt;
+&lt;p&gt;pkg info | grep postgresql&lt;/p&gt;
+&lt;p&gt;然后，你可以使用pkg delete命令来卸载它：&lt;/p&gt;
+&lt;p&gt;pkg delete postgresqlX.Y.Z&lt;/p&gt;
+&lt;p&gt;将X.Y.Z替换为你的实际版本号。&lt;/p&gt;
+&lt;p&gt;最后，你可能还需要删除配置文件和数据目录，这通常位于/var/db/postgresql和/var/db/postgresql_db。&lt;/p&gt;
+&lt;p&gt;请注意，在执行任何删除操作之前，确保你已经备份了所有重要数据。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;云函数部署n8n参考
+&lt;a class=&#34;link&#34; href=&#34;https://sspai.com/post/81749&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;每日一技：使用 Zeabur 部署 n8n 服务 - 少数派&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1e6sVeEEhR/?spm_id_from=333.788.recommend_more_video.0&amp;amp;vd_source=2a74a36b72c9f3a8d76012a97bf29e19&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;N8N+huggingface,一款效率神器，AI利器，必备良品【免费云端电脑+AI，一键部署，工作自动化】_哔哩哔哩_bilibili&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;serv00 部署 参考
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/aigem/n8n-serv00/blob/main/README.md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;n8n-serv00/README.md at main · aigem/n8n-serv00 · GitHub&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1PZy2YdErb/?vd_source=2a74a36b72c9f3a8d76012a97bf29e19&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;一键免费部署自动化工作流神器N8N 在十年免费主机上自动部署教程 N8N+serv00_哔哩哔哩_bilibili&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;之前提及n8n
+&lt;a class=&#34;link&#34; href=&#34;https://acevs.com/3555/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ActivityPub – ACEVS&lt;/a&gt;
+之前提及serv00
+&lt;a class=&#34;link&#34; href=&#34;https://acevs.com/3652/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;免费虚拟主机serv00 – ACEVS&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>免费建站资源1</title>
+        <link>http://localhost:1313/post/%E5%85%8D%E8%B4%B9%E5%BB%BA%E7%AB%99%E8%B5%84%E6%BA%901/</link>
+        <pubDate>Fri, 08 Nov 2024 08:56:15 +0800</pubDate>
+        
+        <guid>http://localhost:1313/post/%E5%85%8D%E8%B4%B9%E5%BB%BA%E7%AB%99%E8%B5%84%E6%BA%901/</guid>
+        <description>&lt;h2 id=&#34;警告&#34;&gt;警告！
+&lt;/h2&gt;&lt;p&gt;免费是最贵的。
+付费也有跑路的。
+都谨慎使用吧。
+重要数据多备份。&lt;/p&gt;
+&lt;p&gt;免费的排名不分先后。
+有的之前免费，但是有名额限制现在没有名额了。
+以下下链接 我都是点开验证了。没有注册。后续慢慢注册。
+有的需要魔法上网。
+之前觉得没空间，没费用的，应该没借口了吧。哈哈。&lt;/p&gt;
+&lt;p&gt;比如这个免费空间已满 香港的
+&lt;a class=&#34;link&#34; href=&#34;http://cubichost.net/bbs/plugin.php?id=ts_hosting&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;cubichost.net/bbs/plugin.php?id=ts_hosting&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;免费空间筛选16个&#34;&gt;免费空间筛选16个
+&lt;/h1&gt;&lt;h2 id=&#34;beget&#34;&gt;beget
+&lt;/h2&gt;&lt;p&gt;俄罗斯的。
+&lt;a class=&#34;link&#34; href=&#34;https://beget.com/en/hosting/free&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;beget.com/en/hosting/free&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;freehostia&#34;&gt;Freehostia
+&lt;/h2&gt;&lt;p&gt;空间不是很大。如果都是文字也可以写部小说了。
+&lt;a class=&#34;link&#34; href=&#34;https://www.freehostia.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Free Web Hosting - Linux, PHP, MySQL, No Ads/Banners by | Freehostia.com&lt;/a&gt;
+Free Hosting Solution
+Domain Names
+Get a taste of our service with the Chocolate free web hosting plan. It will allow you to easily create a professional looking site for FREE. Try our 1-Click Applications Installer and install Joomla, WordPress or many other free web applications with just a click.
+5 Hosted Domain(s)
+250MB Disk Space
+6GB Monthly Traffic
+3 E-mail Accounts
+1 MySQL v.5 Databases
+10MB MySQL Storage&lt;/p&gt;
+&lt;h2 id=&#34;runhosting&#34;&gt;Runhosting
+&lt;/h2&gt;&lt;p&gt;1gb ftp空间 大方。不用魔法速度感觉还行 。我是说访问产品介绍网站。
+&lt;a class=&#34;link&#34; href=&#34;https://go.runhosting.com/free-web-hosting.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;RUNHOSTING&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;byet-host&#34;&gt;byet host
+&lt;/h2&gt;&lt;p&gt;需要魔法访问网站 空间1GB
+&lt;a class=&#34;link&#34; href=&#34;https://byet.host/free-hosting&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Free Hosting&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1000 MB (one gigabyte!) Disk Space&lt;/li&gt;
+&lt;li&gt;FTP account and File Manager&lt;/li&gt;
+&lt;li&gt;Control Panel&lt;/li&gt;
+&lt;li&gt;MySQL databases &amp;amp; PHP Support&lt;/li&gt;
+&lt;li&gt;Free tech support&lt;/li&gt;
+&lt;li&gt;Addon domain, Parked Domains, Sub-Domains&lt;/li&gt;
+&lt;li&gt;Free Community Access (Forums)&lt;/li&gt;
+&lt;li&gt;Clustered Servers&lt;/li&gt;
+&lt;li&gt;No ads!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;0fees&#34;&gt;0fees
+&lt;/h2&gt;&lt;p&gt;名字就是零fee
+300 MB disk space
+10 GB Monthly transfer
+PHP with MySQL databases
+5 Add-on domains
+5 Sub domains
+PHP Flags manager
+FTP account
+File manager
+Webmail, POP3 email
+MYSQL, Php MyAdmin
+&lt;a class=&#34;link&#34; href=&#34;https://0fees.us/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Free Web Hosting - PHP, MySQL, FTP, Email&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;freewha&#34;&gt;Freewha
+&lt;/h2&gt;&lt;p&gt;2005年 开始免费空间。
+介绍挺多。1.5G空间。
+- &lt;strong&gt;99.8% yearly uptime guaranteed&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;- instant activation&lt;/strong&gt; - registration process is automatic, you will be able to access your account in minutes or seconds, depending on how fast you fill the registration form;&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;fast hosting&lt;/strong&gt; - forget the legend that all free hosts are bad: &lt;strong&gt;we are not bad!&lt;/strong&gt; Just test our services for some time as we run &lt;strong&gt;multi-CPU dedicated servers&lt;/strong&gt; with enough &lt;strong&gt;RAM&lt;/strong&gt; and &lt;strong&gt;very fast SSD disks&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;responsive support&lt;/strong&gt; - we are always here to solve reported issues or any other problem with a particular account; we also offer some, but limited technical advice regarding script installation;&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;daily/weekly backups&lt;/strong&gt; on external source - in the worst scenario, if server crashes your files are safe;&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;no ads&lt;/strong&gt; for new sites;&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;1500MB&lt;/strong&gt; free web space;&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;unmetered traffic&lt;/strong&gt;;&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;apache 2.4&lt;/strong&gt; webserver with &lt;strong&gt;mod_rewrite&lt;/strong&gt; (+ other important modules) enabled; &lt;strong&gt;.htaccess,.htpasswd&lt;/strong&gt; support;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;choose between &lt;strong&gt;php 5.6, 7.1, 7.2, 7.3&lt;/strong&gt; with almost all extensions enabled (if you need anything custom, just ask);&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;- &lt;strong&gt;free mysql databases&lt;/strong&gt; powered by &lt;strong&gt;MariaDB 10.4&lt;/strong&gt;;&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;phpMyAdmin&lt;/strong&gt;, the popular tool for database administration, is preinstalled and immediately available;&lt;/p&gt;
+&lt;p&gt;- &lt;strong&gt;SSI&lt;/strong&gt; support (Server Side Includes - .shtml);&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;full &lt;strong&gt;FTP&lt;/strong&gt; support - &lt;strong&gt;web-ftp application&lt;/strong&gt; available with &lt;strong&gt;File Manager&lt;/strong&gt; (WYSIWYG File Editor, FTP client - browser based, tool to set file permissions, to create directories, to create files, tool for renaming, zip/unzip utility and more);&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;access to our &lt;strong&gt;Control Panel&lt;/strong&gt; where you can change your account details and activate the features;
+&lt;a class=&#34;link&#34; href=&#34;https://freewha.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Free Web Hosting Area - Apache 2.4, PHP 7.1, MariaDB 10.2 Mysql server, FTP, Autoinstaller&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;freetzi&#34;&gt;Freetzi
+&lt;/h2&gt;&lt;p&gt;访问 时候证书到期了。
+看介绍和freewha一家的。&lt;/p&gt;
+&lt;p&gt;Welcome to Free Web Hosting Area!!  &lt;!-- raw HTML omitted --&gt;**Create your free hosting account instantly at &lt;a class=&#34;link&#34; href=&#34;https://freewha.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;strong&gt;https://freewha.com&lt;/strong&gt;&lt;/a&gt;.|&lt;a class=&#34;link&#34; href=&#34;https://www.freewebhostingarea.com/contact/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://www.freetzi.com/img/contact.gif&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Contact Us&#34;
+	
+	
+&gt;&lt;/a&gt;|
+|&lt;strong&gt;FREE FEATURES:&lt;/strong&gt; 1500MB webspace, unmetered traffic, PHP 5.6, 7.1, 7.2 or 7.3, MariaDB mysql database, ftp, apache 2.4 webserver and more.|   |
+&lt;a class=&#34;link&#34; href=&#34;https://www.freetzi.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Site Unreachable&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;infinityfree&#34;&gt;Infinityfree
+&lt;/h2&gt;&lt;p&gt;挺豪华
+5g空间
+5 GB Disk Space
+Unlimited Bandwidth
+PHP 8.2
+MySQL 8.0 / MariaDB 10.6
+Free Subdomain Names
+Bring Your Own Domain
+400 MySQL Databases
+Free DNS Service
+Free SSL Certificates
+Full .htaccess Support
+&lt;a class=&#34;link&#34; href=&#34;https://www.infinityfree.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Site Unreachable&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;my-place&#34;&gt;My-place
+&lt;/h2&gt;&lt;p&gt;更豪华
+10G空间跑了好多年
+|Monthly Bandwidth|100 GB|
+|Web Disk Space|10 GB|
+|Price|$0.00 /Month|
+|Addon Domains|10|
+|Parked Domains|10|
+|Sub Domains|10|
+|PHP Sendmail|Limited, for activation emails only|
+|MySQL Databases|10|
+|FTP Accounts|1|
+|Free Domain|yourdomain.My-place.us|
+&lt;a class=&#34;link&#34; href=&#34;http://my-place.us/free-hosting.php&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;my-place.us/free-hosting.php&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;awardspace&#34;&gt;Awardspace
+&lt;/h2&gt;&lt;p&gt;2003年开始的免费空间.每月 限制5000访问者？
+Truly Free Web Hosting with PHP &amp;amp; MySQL. Create your first website for free, and tell your story to the world.&lt;/p&gt;
+&lt;p&gt;The Free Web Hosting Service is suitable for small blog websites, news media, and idea launching.
+Approximate monthly visits:
+~5000/month.
+&lt;a class=&#34;link&#34; href=&#34;https://www.awardspace.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Home - AwardSpace.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; ##  XLphp
+ 免费专业 10g空间
+ ## Free Professional Hosting&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;10GB Disk Space&lt;/li&gt;
+&lt;li&gt;100GB Bandwidth&lt;/li&gt;
+&lt;li&gt;10 Domains Hosting&lt;/li&gt;
+&lt;li&gt;10 Email Accounts&lt;/li&gt;
+&lt;li&gt;Professional Website Builder&lt;/li&gt;
+&lt;li&gt;Softaculous Softaculous&lt;/li&gt;
+&lt;li&gt;Easy-to-use Control Panel
+&lt;a class=&#34;link&#34; href=&#34;http://www.xlphp.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Professional Free Hosting&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;mihosting&#34;&gt;mihosting
+&lt;/h2&gt;&lt;dl&gt;
+&lt;dt&gt;这个免费没有说多久。虚拟机感觉是。&lt;/dt&gt;
+&lt;dt&gt;3 Dominios&lt;/dt&gt;
+&lt;dt&gt;RAM 1GB&lt;/dt&gt;
+&lt;dt&gt;Processor 1 Core&lt;/dt&gt;
+&lt;dt&gt;Espacio: Ilimitado&lt;/dt&gt;
+&lt;dt&gt;Transferencia: Ilimitada&lt;/dt&gt;
+&lt;dt&gt;Cuentas de Email: Ilimitadas&lt;/dt&gt;
+&lt;dt&gt;Antispam&lt;/dt&gt;
+&lt;dt&gt;SSL&lt;/dt&gt;
+&lt;dt&gt;Gratis&lt;/dt&gt;
+&lt;dt&gt;Base de datos&lt;/dt&gt;
+&lt;dd&gt;ilimitadas
+FTP&lt;/dd&gt;
+&lt;dd&gt;ilimitados
+Cronjob: ilimitados
+Subdominios: Ilimitados
+Backups: incluidos
+NVMe SSD
+Httpd/2
+PHP
+5.6 | 7.4 | 8.3
+&lt;a class=&#34;link&#34; href=&#34;https://mihosting.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Web Hosting Gratis en Español - miHosting&lt;/a&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2 id=&#34;alchosting&#34;&gt;alchosting
+&lt;/h2&gt;&lt;p&gt;没有说免费多久
+1gb空间 挺像vps的
+翻译了一下
+自 2020 年以来，我们一直在为小型企业提供免费托管。不要只相信我们的话。免费试用我们的 cPanel 虚拟主机 - 没有任何附加条件。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Independently measured fasted free host servers&lt;br&gt;
+独立测量的 fasted free 主机服务器&lt;/li&gt;
+&lt;li&gt;Zero cost website hosting with PHP, MySQL, cPanel &amp;amp; no ads!&lt;br&gt;
+使用PHP、MySQL、cPanel且无广告的网站托管成本为零！&lt;/li&gt;
+&lt;li&gt;Install 400+ applications with a few clicks&lt;br&gt;
+只需点击几下即可安装 400+ 应用程序
+&lt;a class=&#34;link&#34; href=&#34;https://www.alchosting.net/free-hosting/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Free Website Hosting with VistaPanel and Premium cPanel - ALC Hosting Networks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;miarroba&#34;&gt;Miarroba
+&lt;/h2&gt;&lt;p&gt;可能免费的。整个页面没有free字样。
+需要魔法上网访问
+以最快、最简单的方式发布您自己的网站。我们为您提供高达 &lt;strong&gt;500MB&lt;/strong&gt; 的 &lt;strong&gt;FTP&lt;/strong&gt; 访问、无限传输、&lt;strong&gt;PHP5&lt;/strong&gt; 和 &lt;strong&gt;MySQL 5.x&lt;/strong&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://hosting.miarroba.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hosting&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3vdo&#34;&gt;3V.do
+&lt;/h2&gt;&lt;p&gt;香港免费
+100M和香港的房子一样大的不多。
+&lt;a class=&#34;link&#34; href=&#34;https://free.3v.do/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;三维免费空间-free.3v.do-提供100M永久免费空间申请&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;idcegg&#34;&gt;idcegg
+&lt;/h2&gt;&lt;p&gt;香港 美国都有 都是1G 数据库小。
+免费香港空间
+永久免费
+不充值
+PHP空间：1GB
+MySQL：50M
+捆绑域名：10个
+月流量：10G
+操作系统：Linux
+一次性开通100天
+宝塔面板：捆绑域名、在线ftp、数据库管理、url重定向、伪静态、防盗链、SSL一键申请、一键安装代码、备份还原、主机重置等
+仅限于合法健康网站；禁止非法使用和滥用资源&lt;/p&gt;
+&lt;p&gt;免费美国空间
+永久免费
+不花钱
+PHP空间：1GB
+MySQL：100M
+捆绑域名：10个
+月流量：100G
+操作系统：Linux
+一次性开通100天
+宝塔面板：捆绑域名、在线ftp、数据库管理、url重定向、伪静态、防盗链、SSL一键申请、一键安装代码、备份还原、主机重置等
+仅限于合法健康网站；禁止非法使用和滥用资源
+&lt;a class=&#34;link&#34; href=&#34;https://www.idcegg.com/index.html#price&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;免费空间-提供1GB香港免费空间和美国免费空间- 免备案 无任务 公益性 - 主机蛋&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;xrea&#34;&gt;xrea
+&lt;/h2&gt;&lt;p&gt;10gb 日文 免费空间
+シンプルなのに高機能！ 简单但功能强大！&lt;br&gt;
+無料で運用したい方に！ 对于那些想免费操作的人！&lt;/p&gt;
+&lt;p&gt;月額費用 無料 月额费用无料&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;容量&lt;/td&gt;
+          &lt;td&gt;10GB&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;マルチドメイン 多域&lt;/td&gt;
+          &lt;td&gt;○&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;転送量&lt;/td&gt;
+          &lt;td&gt;5GB/日&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;WordPress WordPress （英文）&lt;/td&gt;
+          &lt;td&gt;利用可&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;チャットサポート 聊天支持&lt;/td&gt;
+          &lt;td&gt;○&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;お試し期間 试用期&lt;/td&gt;
+          &lt;td&gt;なし 没有&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;広告&lt;/td&gt;
+          &lt;td&gt;あり 和&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;バックアップ 备份&lt;/td&gt;
+          &lt;td&gt;○&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;[無料から使える高機能・高品質レンタルサーバー&lt;/td&gt;
+          &lt;td&gt;XREA（エクスリア）](&lt;a class=&#34;link&#34; href=&#34;https://www.xrea.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.xrea.com/&lt;/a&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;免费论坛2个&#34;&gt;免费论坛2个
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.longluntan.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;拥有您自己的免费论坛,LONGLUNTAN -自由建立您的论坛&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.yooco.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Create your own Social Network - for free! - Yooco.org&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;免费-域名4个&#34;&gt;免费 域名4个
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://nic.eu.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;EU.org: free domain names since 1996&lt;/a&gt; 1996年开始免费的域名？
+&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/115535965&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Site Unreachable&lt;/a&gt; 免费一年域名
+&lt;a class=&#34;link&#34; href=&#34;https://mailberry.com.cn/2023/07/free-domain-by-dynadot/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;保姆级教程：免费域名link注册过程 - 邮莓生活&lt;/a&gt; 免费一年
+&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/HW140701/article/details/85156494&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;穷建站（一）：申请免费的tk顶级域名_tk域名官网-CSDN博客&lt;/a&gt; 免费一年&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>云玩家</title>
+        <link>http://localhost:1313/post/%E5%85%8D%E8%B4%B9%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BAserv00/</link>
+        <pubDate>Thu, 07 Nov 2024 08:56:15 +0800</pubDate>
+        
+        <guid>http://localhost:1313/post/%E5%85%8D%E8%B4%B9%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BAserv00/</guid>
+        <description>&lt;p&gt;免费是最贵的。
+不是 重要数据。
+可随意玩。&lt;/p&gt;
+&lt;p&gt;serv00 免费 十年。
+3GB SSD
+就是名额不多了感觉。139016/140000
+网址
+&lt;a class=&#34;link&#34; href=&#34;https://www.serv00.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Site Unreachable&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;注册需要gmail
+魔法节点
+遇到matain开头英文错误提示就换节点
+成功后邮件在gmail的spam里面。
+linux.do 也有人反馈提示发邮件就是收不到。
+最后祝注册成功.&lt;/p&gt;
+&lt;p&gt;使用方法参考
+&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/qq_44668548/article/details/139031641&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;免费serv00虚拟机登录&amp;amp;搭建网站-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;用途参考
+&lt;a class=&#34;link&#34; href=&#34;https://linux.do/t/topic/43121/117&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;【serv00系列教程】汇总帖 - 资源荟萃 - LINUX DO&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>云函数部署</title>
+        <link>http://localhost:1313/post/%E4%BA%91%E5%87%BD%E6%95%B0%E9%83%A8%E7%BD%B2/</link>
+        <pubDate>Wed, 06 Nov 2024 08:56:15 +0800</pubDate>
+        
+        <guid>http://localhost:1313/post/%E4%BA%91%E5%87%BD%E6%95%B0%E9%83%A8%E7%BD%B2/</guid>
+        <description>&lt;p&gt;[!NOTE]&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;云函数（Cloud Function）是一种&lt;strong&gt;运行在云端的轻量级、无关联且可重用的代码执行环境，它允许开发者在无需管理服务器基础设施的情况下编写和部署代码&lt;/strong&gt;。以下是关于云函数的详细介绍：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;基本概述&lt;/strong&gt;：云函数是一段运行在云端的、轻量的、无关联的并且可重用的代码[^1^]。无需管理服务器，只需编写和上传代码，即可获得对应的数据结果[^2^]。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;主要优势&lt;/strong&gt;：使用云函数可以使企业和开发者不需要担心服务器或底层运维设施，可以更专注代码和业务本身，也可以使代码进一步解耦，增加其重用性[^1^][^2^][^3^]。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;触发方式&lt;/strong&gt;：云函数可以通过多种方式触发，包括API调用、SDK调用以及与其他云服务产品的事件关联等[^4^]。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;开发语言&lt;/strong&gt;：云函数支持多种开发工具和语言，如Python、Node.js、PHP、Golang、Java及Custom Runtime，您可以根据您的需要自定义运行环境[^4^][^5^]。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;应用场景&lt;/strong&gt;：云函数适用于实时文件处理和数据处理场景，如移动及Web应用的后端逻辑实现、AI推理预测、数据ETL处理等[^4^][^5^]。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;计费方式&lt;/strong&gt;：云函数通常按需付费，根据请求数和计算资源的运行时间收费，价格优势明显，对初创期的开发者十分友好[^4^]。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;总的来说，云函数为企业和开发者提供了一种便捷、高效且成本可控的方式来构建和扩展应用程序，无需关注底层服务器的管理和维护。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;免费云函数部署&#34;&gt;免费云函数部署
+&lt;/h2&gt;&lt;p&gt;可能目前免费的以后就不免费了。
+免费是最贵的，核心重要数据还是做好备份。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://vercel.com/acevs-projects&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Login – Vercel&lt;/a&gt;
+最早用的就是这个，hexo notion的next 都是用它之前大陆能访问。后来就不行了。
+免费&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.netlify.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Scale &amp;amp; Ship Faster with a Composable Web Architecture | Netlify&lt;/a&gt;
+免费，最近注册有点问题了。需要验证。昨晚我又去折腾了一下，通过邮箱登陆，然后又遇到那个验证页面。么有通过身份验证，通过联系netlify的客服，发了电子邮件，提示截图错误信息，我发了图片 并且说我就是为了跑个twikoo。然后就通过了。然后我又用gmail邮箱注册，发现错误还是那个，还没有出现联系客服，打算过几天再试试。挺神奇。目前国内可以访问。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://huggingface.co/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugging Face – The AI community building the future.&lt;/a&gt;
+免费 网站需要魔法。服务可以大陆用。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://eu-north-1.signin.aws.amazon.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;eu-north-1.console.aws.amazon.com/console/home&lt;/a&gt;
+亚马逊的免费个人方案目前。
+这种最好别用魔法注册，需要信用卡，我的信用卡办理之前为了cf的服务，当时那个&lt;strong&gt;Cloudflare Zero Trust&lt;/strong&gt; 还是需要信用卡的，目前看到有人不需要信用卡使用这个服务了。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://railway.app/new&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Railway&lt;/a&gt;
+免费额度5刀？
+测试用用可以。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zeabur.com/login&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Zeabur&lt;/a&gt;
+免费过。不推荐&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.huaweicloud.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;共建智能世界云底座-华为云&lt;/a&gt;
+暂时免费，有局限。估计和腾讯一样。会突然收费。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cloud.google.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;云计算服务 | Google Cloud&lt;/a&gt;
+免费。国内无法访问&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.memfiredb.com/price.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MemFireDB&lt;/a&gt;
+免费版可以用一段时间 测试用。需要大陆手机注册&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.leancloud.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LeanCloud（美味书签）&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.leancloud.cn/pricing/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;价格 - LeanCloud&lt;/a&gt;
+https无免费 http免费。我看不懂方案。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://azure.microsoft.com/zh-cn/pricing/details/storage/blobs/#pricing&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Azure Blob 存储定价| Microsoft Azure&lt;/a&gt;
+微软的只有免费试用。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.ibm.com/cn-zh/cloud/campaign/cloud-simplicity&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;IBM Cloud&lt;/a&gt;
+说是部分地方免费没看到。
+我注册过不好注册，千万不要开魔法。需要信用卡。客服是印度的电话能听到对方说话，对方听不到你。邮件联系最好。&lt;/p&gt;
+&lt;p&gt;Cloudflare 似乎也有一个。不过不知道免费还是收费。需要代码部署。&lt;/p&gt;
+&lt;p&gt;不知道还有其它免费的云函数部署平台吗？&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>hugo 第2次折腾</title>
+        <link>http://localhost:1313/post/hugo-%E7%AC%AC2%E6%AC%A1%E6%8A%98%E8%85%BE/</link>
+        <pubDate>Tue, 05 Nov 2024 08:56:15 +0800</pubDate>
+        
+        <guid>http://localhost:1313/post/hugo-%E7%AC%AC2%E6%AC%A1%E6%8A%98%E8%85%BE/</guid>
+        <description>&lt;p&gt;最早折腾的是blowfish模版，
+因为npm的问题导致打开powershell 和vscode chrome新页面启动卡顿
+开始卸载2个chrome新装插件，没有效果，没有重启，第二天继续卡。
+全局npm卸载了blowfish-tools，重启后恢复，正常。
+想着继续不用npm折腾blowfish，先加个评论功能，选择了twikoo。
+发现没有啥可以参考的教程。自己也懒得研究。&lt;/p&gt;
+&lt;p&gt;twikoo需要先跑起来。这个是独立的模块。
+两部分组成，数据库和部署环境。
+部署环境vercel被墙了。
+&lt;a class=&#34;link&#34; href=&#34;https://twikoo.js.org/backend.html#netlify-%E9%83%A8%E7%BD%B2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;云函数部署 | Twikoo 文档&lt;/a&gt;
+netlify需要身份验证，身份证什么的。魔法上网不行，不开也不行。测试2天多个邮箱都不行。放弃。邮箱用的gmail和github也不行。
+huggingface 目前还能用。
+按照官方的教程就行。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mongodb+srv://twname:mmmmmmmmmmmmm@twikoo.hphfd.mongodb.net/?retryWrites=true&amp;amp;w=majority&amp;amp;appName=twikoo
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;代码 这个地方name如上图 密码也是 没有箭头括号引号。部署成功后会提示&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;#34;code&amp;#34;:100,
+&amp;#34;message&amp;#34;:&amp;#34;Twiko0云函数运行正常，请参考https://twik
+&amp;#34;version&amp;#34;:&amp;#34;1.6.39&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上面提到blowfish 功能 全面，图片用的也多，咱不用cdn，所以没啥美化效果。
+blowfish没看到添加twikoo的教程。就没折腾。&lt;/p&gt;
+&lt;p&gt;hugo换模版发现配置文件不同有用yaml和toml配置的。开始不懂。以为挺麻烦。看了教程挺复杂感觉。
+我想要直接换个仓库部署，其实新建一个github仓库就行。
+我直接换了个号重新建仓库。这个是新的问题起源。&lt;/p&gt;
+&lt;p&gt;这次模版选择了hugo stack 看着简单教程多。 同样教程多的papermode 和 fixlt等
+hexo的模版教程更多 主要就是twikoo留言系统的。
+各种查资料没有遇到什么大问题。
+stack的模版配置调试文件在blog&amp;ndash;themes-stack-config.yaml里面设置
+没有加太多东西.
+这个教程加了不少.
+&lt;a class=&#34;link&#34; href=&#34;https://iwyang.github.io/archives/3bf3725e/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo Stack主题配置与使用 | Bore&amp;rsquo;s Notes&lt;/a&gt;
+期间用了ai解决一些问题,感觉ai不错.代码问题.比较信赖ai,这也是后面累计浪费几小时的根源.&lt;/p&gt;
+&lt;p&gt;我看.ssh/id_rsa文件只有一个.我还把原来那个复制到别的文件夹(错误操作)重新获取id_rsa.
+git push时候提示要么权限 也么仓库不在.
+我问ai 一台电脑两个github账号,ssh权限,他告诉了,操作步骤,我按着操作了一遍.
+git push时候提示要么权限 也么仓库不在.
+我看.ssh/id_rsa文件只有一个.
+&lt;a class=&#34;link&#34; href=&#34;https://xinghuo.xfyun.cn/share?key=2037750c29cda24f821f47e98ded2bbb&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;讯飞星火大模型-AI大语言模型-星火大模型-科大讯飞&lt;/a&gt;
+ai发的我能做好一部分,有的却不行
+编辑或创建&lt;code&gt;~/.ssh/config&lt;/code&gt;文件,这个相当于申明or路由表&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# Account 1
+Host github.com-account1
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_account1
+
+# Account 2
+Host github.com-account2
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_rsa_account2
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;比如下图repo就是你的name/name.github.io这个我不知道,&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git clone git@github.com-account1:username/repo.git
+git clone git@github.com-account2:username/repo.git
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;后来知道了,按照标准还是不行.
+主要错误我发现是权限那步需要输入密码的时候 显示的rsa不是我要认证的那个id_rsa_2名字我申请的时候不同的.
+git push时候提示要么权限(密码错误 和正确都是权限问题) 也么仓库不在.&lt;/p&gt;
+&lt;p&gt;我开始回忆第一次git仓库那个教程,认证的 是
+git config &amp;ndash;global user.name
+git config &amp;ndash;global user.email
+我也是用ai搜索的.
+撤销全局
+git config &amp;ndash;global &amp;ndash;unset user.name
+git config &amp;ndash;global &amp;ndash;unset user.email
+下面是错误代码
+git config &amp;ndash;global &amp;ndash;unset user.acevs
+git config &amp;ndash;global &amp;ndash;unset user.acevs
+正确代码是
+git config &amp;ndash;global &amp;ndash;unset user.acevs  &amp;ldquo;个人github账号名&amp;rdquo;
+git config &amp;ndash;global &amp;ndash;unset user.acevs  &amp;ldquo;个人github账号邮箱&amp;rdquo;
+撤销全局后。我也没有设置local系统级权限
+git config &amp;ndash;local user.name &amp;ldquo;个人github账号名&amp;rdquo;
+git config &amp;ndash;local user.email &amp;ldquo;个人github账号邮箱&amp;rdquo;
+通过一个list命令可以看看全局下面还有没有&amp;ndash;global账号了
+没有就ok了。&lt;/p&gt;
+&lt;p&gt;然后remove远程仓库。second.github.com是你.ssh/config的host后面的地址
+不是hostname后面的地址
+格式如下&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git remote add origin git@second.github.com:acevsa/acevsa.github.io.git
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;不确定成功链接 就用查看链接仓库名字
+git remote -v&lt;/p&gt;
+&lt;p&gt;然后一路操作上传成功
+git init
+git branch -M main
+git status
+git add .&lt;br&gt;
+git commit -m &amp;ldquo;first commit&amp;rdquo;&lt;br&gt;
+git push -u origin main
+git push -u origin main &amp;ndash;force&lt;/p&gt;
+&lt;p&gt;后面page设置绑定域名简单,可以直接github绑定域名
+以及actions设置可以简单也可以复杂就看你的插件多不多和需求了也是略过&lt;/p&gt;
+&lt;p&gt;twikoo第一次如果点击的设置的密码一定要记住,一定也设置密码.不然部署环境可能就错了需要重新授权一下才行.
+vercel和huggingface 可以用一个mongodb.com数据库 我是都部署了.
+云函数能注册都注册上.说不定啥时候用一下.
+耗费时间不计其数,收获一点点.
+ai虽然正确但是有的标点和逻辑什么的确实不好理解.没有事例.
+所以还得搜索看实例.&lt;/p&gt;
+&lt;p&gt;hugo搭建参考
+&lt;a class=&#34;link&#34; href=&#34;https://zz2summer.github.io/github-pages-hugo-%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github Pages + Hugo 搭建个人博客 - 渣渣的夏天&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://ratmomo.github.io/p/2024/06/%E4%BD%BF%E7%94%A8-hugo--github-pages-%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;使用 Hugo + Github Pages 部署个人博客&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://stilig.me/posts/building-hugo/#%E5%88%A9%E7%94%A8-vercel-%E9%83%A8%E7%BD%B2-hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;从零开始的 Hugo 博客搭建 - Stilig&amp;rsquo;s blog&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/weixin_52473454/article/details/131092259?ops_request_misc=&amp;amp;request_id=&amp;amp;biz_id=102&amp;amp;utm_term=hugo%20github%20%E4%BF%9D%E5%A7%86&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-3-131092259.142%5Ev100%5Epc_search_result_base1&amp;amp;spm=1018.2226.3001.4187&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;使用Hugo+Github从0开始免费搭建个人博客_hugo github-CSDN博客&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;twikoo搭建参考
+&lt;a class=&#34;link&#34; href=&#34;https://www.sulvblog.cn/posts/blog/hugo_twikoo/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo博客添加Twikoo评论 | Sulv&amp;rsquo;s Blog&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://twikoo.js.org/backend.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;云函数部署 | Twikoo 文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;twikoo设置参考
+&lt;a class=&#34;link&#34; href=&#34;https://thirdshire.com/twikoo-tutorial/#%E6%9F%A5%E7%9C%8B%E4%B8%BB%E9%A2%98%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81twikoo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;在静态博客里添加Twikoo评论系统，并配置邮箱和TG通知&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;hugo stack主题配置
+&lt;a class=&#34;link&#34; href=&#34;https://stilig.me/posts/building-hugo/#%E5%88%A9%E7%94%A8-vercel-%E9%83%A8%E7%BD%B2-hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;从零开始的 Hugo 博客搭建 - Stilig&amp;rsquo;s blog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;github多个账号ssh设置参考
+&lt;a class=&#34;link&#34; href=&#34;https://www.jianshu.com/p/c4b11b0af7c1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;一台电脑双 GitHub 账户配置，同时两个 SSH 密钥 - 简书&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/qq_46450354/article/details/129997855&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;一台电脑双 GitHub 账户配置，同时两个 SSH 密钥_fatal: &amp;ndash;local can only be used inside a git repos-CSDN博客&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.jianshu.com/p/8c8cc1b780e2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;多个Git配置多个ssh密钥 - 简书&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;之前折腾文章
+&lt;a class=&#34;link&#34; href=&#34;https://acevs.com/3625/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;npm blowfish hugo – ACEVS&lt;/a&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://acevs.com/3385/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo安装 – ACEVS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;最后
+测试一下stack的hugo
+&lt;a class=&#34;link&#34; href=&#34;https://stack.aceego.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ACEVS&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>悟道0101</title>
         <link>http://localhost:1313/post/%E6%82%9F%E9%81%930101/</link>
         <pubDate>Mon, 04 Nov 2024 08:56:15 +0800</pubDate>
@@ -460,10 +1117,10 @@ hello @admin@acevs.com @acevs@mastodon.social&lt;/p&gt;
         </item>
         <item>
         <title>云玩家</title>
-        <link>http://localhost:1313/post/%E4%BA%91%E7%8E%A9%E5%AE%B6---%E5%89%AF%E6%9C%AC/</link>
+        <link>http://localhost:1313/post/%E4%BA%91%E7%8E%A9%E5%AE%B6/</link>
         <pubDate>Mon, 28 Oct 2024 08:56:15 +0800</pubDate>
         
-        <guid>http://localhost:1313/post/%E4%BA%91%E7%8E%A9%E5%AE%B6---%E5%89%AF%E6%9C%AC/</guid>
+        <guid>http://localhost:1313/post/%E4%BA%91%E7%8E%A9%E5%AE%B6/</guid>
         <description>&lt;h2 id=&#34;起因&#34;&gt;起因
 &lt;/h2&gt;&lt;p&gt;老婆之前问我很神话悟空买了多少钱？
 我说200左右，她说她花钱买个让我玩，她看剧情。
