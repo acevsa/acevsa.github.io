@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="记录上周六晚上的事情 周六晚上又开始研究为啥电脑黑屏完自动重启，重启还比较有意思，像汽车熄火打火一样，电源灯忽闪忽闪两下，听到机箱风扇嗡一下，然后熄火，再电源灯忽闪忽闪，在听到机箱风扇嗡一下，然后熄火，再电源灯忽闪忽闪，硬盘灯常亮，这个时候大概率就能启动了（后面情况被我整复杂了）.其实这个时候大概率就是电源电容问题，充放电导致的，电容漏电了。但是实在懒得买个电容修了（如果不是电容问题是功率管就麻烦了也不好整）。这种300瓦电源我有四五个，一直懒得修，修好了不值钱，也用不上。比较鸡肋。 不玩游戏 ，问题不大，那就开始测试测试内存。用的图吧工具箱，里面工具非常全，都是双击就能用，最多解压一下。memorytest 单词我随便写的，我记得不一定对。一个x86 一个x64 用了x64 程序跑起来，鼠标开始3.4秒还能看到在移动。后来直接不动了。十多分钟，我直接重启电脑换测试软件。换了x86版本的，没有任何反应。换了另一个。TestMem5 这个可以跑。跑了一遍没有任何报错。 hdtune 测硬盘，硬盘慢扫就是不勾选那个快速。扫描了一半全是绿的，等待图中，我有想起孩子和我一起组队的泰拉瑞亚存档，想着genius也有数据恢复的试了一下扫出来的，是周六上午的存档。魔方恢复，finaldata数据恢复，全都试了一下，途中发现进度条不动了，去看hdtune速度从100多M降到4.8M/s看了hdtune，前面扇区没有问题。后面不扫也行。一般重启读引导都前面扇区多点。开始专心数据恢复，恢复过程中，我用另一台电脑查办法，发现bilibili有个更新bios解决问题的。我去技嘉主板官网下了最新的bios。2021年的F6 主板自带的是F4.安装方法是需要u盘的。u盘不在身边，手上竟然只有sd卡。sd卡一般不要当u盘用，不稳定，因为读卡器不稳定。\n寻思晚上这么冷出去找个太麻烦，发现有个@bios的app，下载后发现是个压缩包，不能直接用，需要技嘉app支持，然后有下载了技嘉app，然后加载这个包就行，升级了bios，我还手贱去更新了系统补丁。bios更新的时候没有死机重启，这个是万幸。不然可能麻烦就大了，尤其不识别u盘的时候。\nwindows系统补丁更新时候提示百分比，不要断电和重启，蓝色屏幕这样说，我看着屏幕没有离开眼神，默默祈祷别出问题。78%，唰，黑屏，我放弃祈祷，默念我cao！ 然后忽闪忽闪的电源灯，硬盘灯，提示更新电脑，然后黑屏，然后重复，重复了4遍，我默念又要重装系统了。但是这次我先不装了。我寻思如果重装过程在断电就无限循环了。先去咸鱼看看二手电源吧。\n没有钱买东西就是费时间，时间也是钱。 我先去看的安钛克电源。我手上能用且好用的是2010年的，换了个风扇，其他都没问题目前。 看了几个都是450w 50元左右，不过都是专业倒卖二手的倒爷，我还是看看自用的卖家吧，一般可能稍微好点。我一看表已经凌晨快2.00了。先睡吧。明天还得做饭。不然一起来就中午了，大家都饿着也不好。\n周日早上我起来想去找朋友的电源拆来测试，最后一想，还是算了。来回拆折腾不比50元贵。还欠个人情。直接买二手电源吧。我又去查了资料。全汉，海韵，安钛克，这几个我用过都还不错。耐用。坏掉的就是大水牛航嘉鑫谷（也有人说好）大风车这些。我看了几个拆电源的帖子在数码家电论坛。全汉缩水，安钛克也那么回事了。不过我还是有信仰，执迷不悟，继续全汉，安钛克选择。一个43包邮全汉蓝暴400瓦，都挺好，但是没有买，18年左右的。一个安钛克vp450p 我看日期戳是2016年，卖家说是2018 45包邮。还有后来发现是倒爷，不过我看易碎贴没有破，无拆修，但是没有具体年份。没有优先考虑，有个卖家18年10月份买的买完用了一年功率不够换了更大的。她（头像是个漫画女娃头，真不知道男女，不过不重要）那个是550瓦。我觉得是个宝，我问他包邮吗，不包邮 有12邮费。一共67元。我觉得不错，就直接下单了。她说邮费到付，我说别到付都贵，发最便宜的快递，都能到，他说好的，过了一会他告诉我，湖北过来顺丰31 京东16+6 我说一个最贵，一个次贵，发其他的普通的就行。他说中通不发，我说还有其他的，说完我想起快递100和白鸽惠递，小程序，我和他说。我怕他嫌麻烦到时候我又得多出邮费，我赶紧自己去小程序模拟山东到湖北的邮费。一看首单9.6圆通。我截图就发他。他说韵达18我说在线下单，都是总部对接的服务好。后来他说学习到了，估计拿到了优惠价格吧。 然后他找了个电脑师傅用短接方式 测了一个5a出来，证明没有问题。我也不知道，我说不懂，应该没问题。\n下完单，我又想起一件事情，电容不用的时候容易坏，我查了资料。确实如此，短则几个月，长则两年。他这个四年没用了。但是已经发了，我寻思到货再说吧。不行自己买电容换了，其他电子原件寿命应该还好至少可能真得没咋用。\n下次再买电源就是年份进的，长期用的优先。之前给别人整电源，不管全新二手，没想这么多，能用就行。自己一省钱，一走心，想的就多了。其实牌子不牌子，前面说的那么多过程都没啥用，有个昂达主板网卡还是100M的，杂牌电源 ，杂牌内存也是用了好多年。没有问题。还得靠点运气。\n老破电脑，我也没卖，现在那个笔记本，给孩子先看bilibili吧，缓和缓和\n更新，昨天买的二手全汉550 蓝暴经典电源到了，不重。看电源里面的配件都很新，电源风扇有点灰尘，我也懒得除尘，万一不能用还得拆开修，那时候除尘吧。本来是拔掉主板各种电源线 想不安装这个电源测试，发现桌子太小，操作空间小，如果电源不小心从机箱边缘碰掉砸着主板上的其他配件，那就损失大了，还是直接拆掉旧电源装好这个二手电源在测试吧。\n一顿操作猛如虎，一次点亮，正常启动，自检的时候cpu风扇还停了几秒钟。有点紧张。还好一切顺利，电脑补丁进度回滚了，重新更新了补丁。进入系统，没啥异常。\n测试电脑打了一把魔兽争霸3，lost temple 失去的庙宇地图。这个地图忘记屏蔽，一般挺费时间的。对手说自己萌新。我说我也是。我随机了不死族。他是暗夜。开局，对手的月亮女祭司就点了灼热之箭技能来骚扰我的寺僧，我的死亡骑士一般用死亡缠绕给寺僧加血，一边指挥食尸鬼走位，最后把月亮女祭司围住了。她在快要没血的时候使用了回程卷轴，一看就不是萌新，骚扰就是高手的基础。后面果然痛苦，对手用女豹骑在地图3点钟 4点钟 6点钟 7点钟位置都开了分矿。有的分矿被我拆了三次。我是蜘蛛流，英雄是死骑，巫妖王，小强。对手是月亮女祭司，炎魔，娜迦，对手策略就是要秒我的死骑，好几次两位数残血逃生。打了半个多小时。我把他的分矿拆除后就建立了自己的分矿。我开了三个分矿。感觉形式大好，突然失去链接了，网络没有连接了。我抬头看了看站在显示器上的三个鹦鹉，就明白了。它们没事就啄放在显示器旁边的机箱上的路由光猫的网线电源线光纤，不知道那个接触不好。上次断网就是它们干的。\n继续观察电脑2个小时左右，平稳一切正常了。 今天早上继续开机测试一会，没啥问题。 算是修复了。还好不是主板问题。\n">
+<title>孩子的电脑维修2</title>
+
+<link rel='canonical' href='http://localhost:1313/post/%E5%AD%A9%E5%AD%90%E7%9A%84%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE2/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="孩子的电脑维修2">
+<meta property='og:description' content="记录上周六晚上的事情 周六晚上又开始研究为啥电脑黑屏完自动重启，重启还比较有意思，像汽车熄火打火一样，电源灯忽闪忽闪两下，听到机箱风扇嗡一下，然后熄火，再电源灯忽闪忽闪，在听到机箱风扇嗡一下，然后熄火，再电源灯忽闪忽闪，硬盘灯常亮，这个时候大概率就能启动了（后面情况被我整复杂了）.其实这个时候大概率就是电源电容问题，充放电导致的，电容漏电了。但是实在懒得买个电容修了（如果不是电容问题是功率管就麻烦了也不好整）。这种300瓦电源我有四五个，一直懒得修，修好了不值钱，也用不上。比较鸡肋。 不玩游戏 ，问题不大，那就开始测试测试内存。用的图吧工具箱，里面工具非常全，都是双击就能用，最多解压一下。memorytest 单词我随便写的，我记得不一定对。一个x86 一个x64 用了x64 程序跑起来，鼠标开始3.4秒还能看到在移动。后来直接不动了。十多分钟，我直接重启电脑换测试软件。换了x86版本的，没有任何反应。换了另一个。TestMem5 这个可以跑。跑了一遍没有任何报错。 hdtune 测硬盘，硬盘慢扫就是不勾选那个快速。扫描了一半全是绿的，等待图中，我有想起孩子和我一起组队的泰拉瑞亚存档，想着genius也有数据恢复的试了一下扫出来的，是周六上午的存档。魔方恢复，finaldata数据恢复，全都试了一下，途中发现进度条不动了，去看hdtune速度从100多M降到4.8M/s看了hdtune，前面扇区没有问题。后面不扫也行。一般重启读引导都前面扇区多点。开始专心数据恢复，恢复过程中，我用另一台电脑查办法，发现bilibili有个更新bios解决问题的。我去技嘉主板官网下了最新的bios。2021年的F6 主板自带的是F4.安装方法是需要u盘的。u盘不在身边，手上竟然只有sd卡。sd卡一般不要当u盘用，不稳定，因为读卡器不稳定。\n寻思晚上这么冷出去找个太麻烦，发现有个@bios的app，下载后发现是个压缩包，不能直接用，需要技嘉app支持，然后有下载了技嘉app，然后加载这个包就行，升级了bios，我还手贱去更新了系统补丁。bios更新的时候没有死机重启，这个是万幸。不然可能麻烦就大了，尤其不识别u盘的时候。\nwindows系统补丁更新时候提示百分比，不要断电和重启，蓝色屏幕这样说，我看着屏幕没有离开眼神，默默祈祷别出问题。78%，唰，黑屏，我放弃祈祷，默念我cao！ 然后忽闪忽闪的电源灯，硬盘灯，提示更新电脑，然后黑屏，然后重复，重复了4遍，我默念又要重装系统了。但是这次我先不装了。我寻思如果重装过程在断电就无限循环了。先去咸鱼看看二手电源吧。\n没有钱买东西就是费时间，时间也是钱。 我先去看的安钛克电源。我手上能用且好用的是2010年的，换了个风扇，其他都没问题目前。 看了几个都是450w 50元左右，不过都是专业倒卖二手的倒爷，我还是看看自用的卖家吧，一般可能稍微好点。我一看表已经凌晨快2.00了。先睡吧。明天还得做饭。不然一起来就中午了，大家都饿着也不好。\n周日早上我起来想去找朋友的电源拆来测试，最后一想，还是算了。来回拆折腾不比50元贵。还欠个人情。直接买二手电源吧。我又去查了资料。全汉，海韵，安钛克，这几个我用过都还不错。耐用。坏掉的就是大水牛航嘉鑫谷（也有人说好）大风车这些。我看了几个拆电源的帖子在数码家电论坛。全汉缩水，安钛克也那么回事了。不过我还是有信仰，执迷不悟，继续全汉，安钛克选择。一个43包邮全汉蓝暴400瓦，都挺好，但是没有买，18年左右的。一个安钛克vp450p 我看日期戳是2016年，卖家说是2018 45包邮。还有后来发现是倒爷，不过我看易碎贴没有破，无拆修，但是没有具体年份。没有优先考虑，有个卖家18年10月份买的买完用了一年功率不够换了更大的。她（头像是个漫画女娃头，真不知道男女，不过不重要）那个是550瓦。我觉得是个宝，我问他包邮吗，不包邮 有12邮费。一共67元。我觉得不错，就直接下单了。她说邮费到付，我说别到付都贵，发最便宜的快递，都能到，他说好的，过了一会他告诉我，湖北过来顺丰31 京东16+6 我说一个最贵，一个次贵，发其他的普通的就行。他说中通不发，我说还有其他的，说完我想起快递100和白鸽惠递，小程序，我和他说。我怕他嫌麻烦到时候我又得多出邮费，我赶紧自己去小程序模拟山东到湖北的邮费。一看首单9.6圆通。我截图就发他。他说韵达18我说在线下单，都是总部对接的服务好。后来他说学习到了，估计拿到了优惠价格吧。 然后他找了个电脑师傅用短接方式 测了一个5a出来，证明没有问题。我也不知道，我说不懂，应该没问题。\n下完单，我又想起一件事情，电容不用的时候容易坏，我查了资料。确实如此，短则几个月，长则两年。他这个四年没用了。但是已经发了，我寻思到货再说吧。不行自己买电容换了，其他电子原件寿命应该还好至少可能真得没咋用。\n下次再买电源就是年份进的，长期用的优先。之前给别人整电源，不管全新二手，没想这么多，能用就行。自己一省钱，一走心，想的就多了。其实牌子不牌子，前面说的那么多过程都没啥用，有个昂达主板网卡还是100M的，杂牌电源 ，杂牌内存也是用了好多年。没有问题。还得靠点运气。\n老破电脑，我也没卖，现在那个笔记本，给孩子先看bilibili吧，缓和缓和\n更新，昨天买的二手全汉550 蓝暴经典电源到了，不重。看电源里面的配件都很新，电源风扇有点灰尘，我也懒得除尘，万一不能用还得拆开修，那时候除尘吧。本来是拔掉主板各种电源线 想不安装这个电源测试，发现桌子太小，操作空间小，如果电源不小心从机箱边缘碰掉砸着主板上的其他配件，那就损失大了，还是直接拆掉旧电源装好这个二手电源在测试吧。\n一顿操作猛如虎，一次点亮，正常启动，自检的时候cpu风扇还停了几秒钟。有点紧张。还好一切顺利，电脑补丁进度回滚了，重新更新了补丁。进入系统，没啥异常。\n测试电脑打了一把魔兽争霸3，lost temple 失去的庙宇地图。这个地图忘记屏蔽，一般挺费时间的。对手说自己萌新。我说我也是。我随机了不死族。他是暗夜。开局，对手的月亮女祭司就点了灼热之箭技能来骚扰我的寺僧，我的死亡骑士一般用死亡缠绕给寺僧加血，一边指挥食尸鬼走位，最后把月亮女祭司围住了。她在快要没血的时候使用了回程卷轴，一看就不是萌新，骚扰就是高手的基础。后面果然痛苦，对手用女豹骑在地图3点钟 4点钟 6点钟 7点钟位置都开了分矿。有的分矿被我拆了三次。我是蜘蛛流，英雄是死骑，巫妖王，小强。对手是月亮女祭司，炎魔，娜迦，对手策略就是要秒我的死骑，好几次两位数残血逃生。打了半个多小时。我把他的分矿拆除后就建立了自己的分矿。我开了三个分矿。感觉形式大好，突然失去链接了，网络没有连接了。我抬头看了看站在显示器上的三个鹦鹉，就明白了。它们没事就啄放在显示器旁边的机箱上的路由光猫的网线电源线光纤，不知道那个接触不好。上次断网就是它们干的。\n继续观察电脑2个小时左右，平稳一切正常了。 今天早上继续开机测试一会，没啥问题。 算是修复了。还好不是主板问题。\n">
+<meta property='og:url' content='http://localhost:1313/post/%E5%AD%A9%E5%AD%90%E7%9A%84%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE2/'>
+<meta property='og:site_name' content='ACEVS'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-11-13T08:56:15&#43;08:00'/><meta property='article:modified_time' content='2024-11-13T08:56:15&#43;08:00'/>
+<meta name="twitter:title" content="孩子的电脑维修2">
+<meta name="twitter:description" content="记录上周六晚上的事情 周六晚上又开始研究为啥电脑黑屏完自动重启，重启还比较有意思，像汽车熄火打火一样，电源灯忽闪忽闪两下，听到机箱风扇嗡一下，然后熄火，再电源灯忽闪忽闪，在听到机箱风扇嗡一下，然后熄火，再电源灯忽闪忽闪，硬盘灯常亮，这个时候大概率就能启动了（后面情况被我整复杂了）.其实这个时候大概率就是电源电容问题，充放电导致的，电容漏电了。但是实在懒得买个电容修了（如果不是电容问题是功率管就麻烦了也不好整）。这种300瓦电源我有四五个，一直懒得修，修好了不值钱，也用不上。比较鸡肋。 不玩游戏 ，问题不大，那就开始测试测试内存。用的图吧工具箱，里面工具非常全，都是双击就能用，最多解压一下。memorytest 单词我随便写的，我记得不一定对。一个x86 一个x64 用了x64 程序跑起来，鼠标开始3.4秒还能看到在移动。后来直接不动了。十多分钟，我直接重启电脑换测试软件。换了x86版本的，没有任何反应。换了另一个。TestMem5 这个可以跑。跑了一遍没有任何报错。 hdtune 测硬盘，硬盘慢扫就是不勾选那个快速。扫描了一半全是绿的，等待图中，我有想起孩子和我一起组队的泰拉瑞亚存档，想着genius也有数据恢复的试了一下扫出来的，是周六上午的存档。魔方恢复，finaldata数据恢复，全都试了一下，途中发现进度条不动了，去看hdtune速度从100多M降到4.8M/s看了hdtune，前面扇区没有问题。后面不扫也行。一般重启读引导都前面扇区多点。开始专心数据恢复，恢复过程中，我用另一台电脑查办法，发现bilibili有个更新bios解决问题的。我去技嘉主板官网下了最新的bios。2021年的F6 主板自带的是F4.安装方法是需要u盘的。u盘不在身边，手上竟然只有sd卡。sd卡一般不要当u盘用，不稳定，因为读卡器不稳定。\n寻思晚上这么冷出去找个太麻烦，发现有个@bios的app，下载后发现是个压缩包，不能直接用，需要技嘉app支持，然后有下载了技嘉app，然后加载这个包就行，升级了bios，我还手贱去更新了系统补丁。bios更新的时候没有死机重启，这个是万幸。不然可能麻烦就大了，尤其不识别u盘的时候。\nwindows系统补丁更新时候提示百分比，不要断电和重启，蓝色屏幕这样说，我看着屏幕没有离开眼神，默默祈祷别出问题。78%，唰，黑屏，我放弃祈祷，默念我cao！ 然后忽闪忽闪的电源灯，硬盘灯，提示更新电脑，然后黑屏，然后重复，重复了4遍，我默念又要重装系统了。但是这次我先不装了。我寻思如果重装过程在断电就无限循环了。先去咸鱼看看二手电源吧。\n没有钱买东西就是费时间，时间也是钱。 我先去看的安钛克电源。我手上能用且好用的是2010年的，换了个风扇，其他都没问题目前。 看了几个都是450w 50元左右，不过都是专业倒卖二手的倒爷，我还是看看自用的卖家吧，一般可能稍微好点。我一看表已经凌晨快2.00了。先睡吧。明天还得做饭。不然一起来就中午了，大家都饿着也不好。\n周日早上我起来想去找朋友的电源拆来测试，最后一想，还是算了。来回拆折腾不比50元贵。还欠个人情。直接买二手电源吧。我又去查了资料。全汉，海韵，安钛克，这几个我用过都还不错。耐用。坏掉的就是大水牛航嘉鑫谷（也有人说好）大风车这些。我看了几个拆电源的帖子在数码家电论坛。全汉缩水，安钛克也那么回事了。不过我还是有信仰，执迷不悟，继续全汉，安钛克选择。一个43包邮全汉蓝暴400瓦，都挺好，但是没有买，18年左右的。一个安钛克vp450p 我看日期戳是2016年，卖家说是2018 45包邮。还有后来发现是倒爷，不过我看易碎贴没有破，无拆修，但是没有具体年份。没有优先考虑，有个卖家18年10月份买的买完用了一年功率不够换了更大的。她（头像是个漫画女娃头，真不知道男女，不过不重要）那个是550瓦。我觉得是个宝，我问他包邮吗，不包邮 有12邮费。一共67元。我觉得不错，就直接下单了。她说邮费到付，我说别到付都贵，发最便宜的快递，都能到，他说好的，过了一会他告诉我，湖北过来顺丰31 京东16+6 我说一个最贵，一个次贵，发其他的普通的就行。他说中通不发，我说还有其他的，说完我想起快递100和白鸽惠递，小程序，我和他说。我怕他嫌麻烦到时候我又得多出邮费，我赶紧自己去小程序模拟山东到湖北的邮费。一看首单9.6圆通。我截图就发他。他说韵达18我说在线下单，都是总部对接的服务好。后来他说学习到了，估计拿到了优惠价格吧。 然后他找了个电脑师傅用短接方式 测了一个5a出来，证明没有问题。我也不知道，我说不懂，应该没问题。\n下完单，我又想起一件事情，电容不用的时候容易坏，我查了资料。确实如此，短则几个月，长则两年。他这个四年没用了。但是已经发了，我寻思到货再说吧。不行自己买电容换了，其他电子原件寿命应该还好至少可能真得没咋用。\n下次再买电源就是年份进的，长期用的优先。之前给别人整电源，不管全新二手，没想这么多，能用就行。自己一省钱，一走心，想的就多了。其实牌子不牌子，前面说的那么多过程都没啥用，有个昂达主板网卡还是100M的，杂牌电源 ，杂牌内存也是用了好多年。没有问题。还得靠点运气。\n老破电脑，我也没卖，现在那个笔记本，给孩子先看bilibili吧，缓和缓和\n更新，昨天买的二手全汉550 蓝暴经典电源到了，不重。看电源里面的配件都很新，电源风扇有点灰尘，我也懒得除尘，万一不能用还得拆开修，那时候除尘吧。本来是拔掉主板各种电源线 想不安装这个电源测试，发现桌子太小，操作空间小，如果电源不小心从机箱边缘碰掉砸着主板上的其他配件，那就损失大了，还是直接拆掉旧电源装好这个二手电源在测试吧。\n一顿操作猛如虎，一次点亮，正常启动，自检的时候cpu风扇还停了几秒钟。有点紧张。还好一切顺利，电脑补丁进度回滚了，重新更新了补丁。进入系统，没啥异常。\n测试电脑打了一把魔兽争霸3，lost temple 失去的庙宇地图。这个地图忘记屏蔽，一般挺费时间的。对手说自己萌新。我说我也是。我随机了不死族。他是暗夜。开局，对手的月亮女祭司就点了灼热之箭技能来骚扰我的寺僧，我的死亡骑士一般用死亡缠绕给寺僧加血，一边指挥食尸鬼走位，最后把月亮女祭司围住了。她在快要没血的时候使用了回程卷轴，一看就不是萌新，骚扰就是高手的基础。后面果然痛苦，对手用女豹骑在地图3点钟 4点钟 6点钟 7点钟位置都开了分矿。有的分矿被我拆了三次。我是蜘蛛流，英雄是死骑，巫妖王，小强。对手是月亮女祭司，炎魔，娜迦，对手策略就是要秒我的死骑，好几次两位数残血逃生。打了半个多小时。我把他的分矿拆除后就建立了自己的分矿。我开了三个分矿。感觉形式大好，突然失去链接了，网络没有连接了。我抬头看了看站在显示器上的三个鹦鹉，就明白了。它们没事就啄放在显示器旁边的机箱上的路由光猫的网线电源线光纤，不知道那个接触不好。上次断网就是它们干的。\n继续观察电脑2个小时左右，平稳一切正常了。 今天早上继续开机测试一会，没啥问题。 算是修复了。还好不是主板问题。\n">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu14767566042683997439.png" width="300"
+                            height="308" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">ACEVS</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/%E5%AD%A9%E5%AD%90%E7%9A%84%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE2/">孩子的电脑维修2</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Nov 13, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>记录上周六晚上的事情
+周六晚上又开始研究为啥电脑黑屏完自动重启，重启还比较有意思，像汽车熄火打火一样，电源灯忽闪忽闪两下，听到机箱风扇嗡一下，然后熄火，再电源灯忽闪忽闪，在听到机箱风扇嗡一下，然后熄火，再电源灯忽闪忽闪，硬盘灯常亮，这个时候大概率就能启动了（后面情况被我整复杂了）.其实这个时候大概率就是电源电容问题，充放电导致的，电容漏电了。但是实在懒得买个电容修了（如果不是电容问题是功率管就麻烦了也不好整）。这种300瓦电源我有四五个，一直懒得修，修好了不值钱，也用不上。比较鸡肋。
+不玩游戏 ，问题不大，那就开始测试测试内存。用的图吧工具箱，里面工具非常全，都是双击就能用，最多解压一下。memorytest  单词我随便写的，我记得不一定对。一个x86 一个x64 用了x64 程序跑起来，鼠标开始3.4秒还能看到在移动。后来直接不动了。十多分钟，我直接重启电脑换测试软件。换了x86版本的，没有任何反应。换了另一个。TestMem5 这个可以跑。跑了一遍没有任何报错。
+hdtune 测硬盘，硬盘慢扫就是不勾选那个快速。扫描了一半全是绿的，等待图中，我有想起孩子和我一起组队的泰拉瑞亚存档，想着genius也有数据恢复的试了一下扫出来的，是周六上午的存档。魔方恢复，finaldata数据恢复，全都试了一下，途中发现进度条不动了，去看hdtune速度从100多M降到4.8M/s看了hdtune，前面扇区没有问题。后面不扫也行。一般重启读引导都前面扇区多点。开始专心数据恢复，恢复过程中，我用另一台电脑查办法，发现bilibili有个更新bios解决问题的。我去技嘉主板官网下了最新的bios。2021年的F6 主板自带的是F4.安装方法是需要u盘的。u盘不在身边，手上竟然只有sd卡。sd卡一般不要当u盘用，不稳定，因为读卡器不稳定。</p>
+<p>寻思晚上这么冷出去找个太麻烦，发现有个@bios的app，下载后发现是个压缩包，不能直接用，需要技嘉app支持，然后有下载了技嘉app，然后加载这个包就行，升级了bios，我还手贱去更新了系统补丁。bios更新的时候没有死机重启，这个是万幸。不然可能麻烦就大了，尤其不识别u盘的时候。</p>
+<p>windows系统补丁更新时候提示百分比，不要断电和重启，蓝色屏幕这样说，我看着屏幕没有离开眼神，默默祈祷别出问题。78%，唰，黑屏，我放弃祈祷，默念我cao！
+然后忽闪忽闪的电源灯，硬盘灯，提示更新电脑，然后黑屏，然后重复，重复了4遍，我默念又要重装系统了。但是这次我先不装了。我寻思如果重装过程在断电就无限循环了。先去咸鱼看看二手电源吧。</p>
+<p>没有钱买东西就是费时间，时间也是钱。
+我先去看的安钛克电源。我手上能用且好用的是2010年的，换了个风扇，其他都没问题目前。
+看了几个都是450w 50元左右，不过都是专业倒卖二手的倒爷，我还是看看自用的卖家吧，一般可能稍微好点。我一看表已经凌晨快2.00了。先睡吧。明天还得做饭。不然一起来就中午了，大家都饿着也不好。</p>
+<p>周日早上我起来想去找朋友的电源拆来测试，最后一想，还是算了。来回拆折腾不比50元贵。还欠个人情。直接买二手电源吧。我又去查了资料。全汉，海韵，安钛克，这几个我用过都还不错。耐用。坏掉的就是大水牛航嘉鑫谷（也有人说好）大风车这些。我看了几个拆电源的帖子在数码家电论坛。全汉缩水，安钛克也那么回事了。不过我还是有信仰，执迷不悟，继续全汉，安钛克选择。一个43包邮全汉蓝暴400瓦，都挺好，但是没有买，18年左右的。一个安钛克vp450p 我看日期戳是2016年，卖家说是2018 45包邮。还有后来发现是倒爷，不过我看易碎贴没有破，无拆修，但是没有具体年份。没有优先考虑，有个卖家18年10月份买的买完用了一年功率不够换了更大的。她（头像是个漫画女娃头，真不知道男女，不过不重要）那个是550瓦。我觉得是个宝，我问他包邮吗，不包邮 有12邮费。一共67元。我觉得不错，就直接下单了。她说邮费到付，我说别到付都贵，发最便宜的快递，都能到，他说好的，过了一会他告诉我，湖北过来顺丰31 京东16+6 我说一个最贵，一个次贵，发其他的普通的就行。他说中通不发，我说还有其他的，说完我想起快递100和白鸽惠递，小程序，我和他说。我怕他嫌麻烦到时候我又得多出邮费，我赶紧自己去小程序模拟山东到湖北的邮费。一看首单9.6圆通。我截图就发他。他说韵达18我说在线下单，都是总部对接的服务好。后来他说学习到了，估计拿到了优惠价格吧。
+然后他找了个电脑师傅用短接方式 测了一个5a出来，证明没有问题。我也不知道，我说不懂，应该没问题。</p>
+<p>下完单，我又想起一件事情，电容不用的时候容易坏，我查了资料。确实如此，短则几个月，长则两年。他这个四年没用了。但是已经发了，我寻思到货再说吧。不行自己买电容换了，其他电子原件寿命应该还好至少可能真得没咋用。</p>
+<p>下次再买电源就是年份进的，长期用的优先。之前给别人整电源，不管全新二手，没想这么多，能用就行。自己一省钱，一走心，想的就多了。其实牌子不牌子，前面说的那么多过程都没啥用，有个昂达主板网卡还是100M的，杂牌电源 ，杂牌内存也是用了好多年。没有问题。还得靠点运气。</p>
+<p>老破电脑，我也没卖，现在那个笔记本，给孩子先看bilibili吧，缓和缓和</p>
+<p>更新，昨天买的二手全汉550 蓝暴经典电源到了，不重。看电源里面的配件都很新，电源风扇有点灰尘，我也懒得除尘，万一不能用还得拆开修，那时候除尘吧。本来是拔掉主板各种电源线 想不安装这个电源测试，发现桌子太小，操作空间小，如果电源不小心从机箱边缘碰掉砸着主板上的其他配件，那就损失大了，还是直接拆掉旧电源装好这个二手电源在测试吧。</p>
+<p>一顿操作猛如虎，一次点亮，正常启动，自检的时候cpu风扇还停了几秒钟。有点紧张。还好一切顺利，电脑补丁进度回滚了，重新更新了补丁。进入系统，没啥异常。</p>
+<p>测试电脑打了一把魔兽争霸3，lost temple 失去的庙宇地图。这个地图忘记屏蔽，一般挺费时间的。对手说自己萌新。我说我也是。我随机了不死族。他是暗夜。开局，对手的月亮女祭司就点了灼热之箭技能来骚扰我的寺僧，我的死亡骑士一般用死亡缠绕给寺僧加血，一边指挥食尸鬼走位，最后把月亮女祭司围住了。她在快要没血的时候使用了回程卷轴，一看就不是萌新，骚扰就是高手的基础。后面果然痛苦，对手用女豹骑在地图3点钟 4点钟 6点钟 7点钟位置都开了分矿。有的分矿被我拆了三次。我是蜘蛛流，英雄是死骑，巫妖王，小强。对手是月亮女祭司，炎魔，娜迦，对手策略就是要秒我的死骑，好几次两位数残血逃生。打了半个多小时。我把他的分矿拆除后就建立了自己的分矿。我开了三个分矿。感觉形式大好，突然失去链接了，网络没有连接了。我抬头看了看站在显示器上的三个鹦鹉，就明白了。它们没事就啄放在显示器旁边的机箱上的路由光猫的网线电源线光纤，不知道那个接触不好。上次断网就是它们干的。</p>
+<p>继续观察电脑2个小时左右，平稳一切正常了。
+今天早上继续开机测试一会，没啥问题。
+算是修复了。还好不是主板问题。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script src="//cdn.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js"></script>
+<div id="tcomment"></div>
+<style>
+    .twikoo {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    :root[data-scheme="dark"] {
+        --twikoo-body-text-color-main: rgba(255, 255, 255, 0.9);
+        --twikoo-body-text-color: rgba(255, 255, 255, 0.7);
+    }
+    .twikoo .el-input-group__prepend,
+    .twikoo .tk-action-icon,
+    .twikoo .tk-submit-action-icon,
+    .twikoo .tk-time,
+    .twikoo .tk-comments-no,
+    .twikoo .tk-comments-count {
+        color: var(--twikoo-body-text-color);
+    }
+    .twikoo .el-input__inner,
+    .twikoo .el-textarea__inner,
+    .twikoo .tk-preview-container,
+    .twikoo .tk-content,
+    .twikoo .tk-nick,
+    .twikoo .tk-send {
+        color: var(--twikoo-body-text-color-main);
+    }
+    .twikoo .el-button{
+        color: var(--twikoo-body-text-color)!important;
+    }
+    .twikoo .el-input__count {
+        color: var(--twikoo-body-text-color) !important;
+    }
+    .OwO .OwO-body {
+        background-color: var(--body-background) !important;
+        color: var(--body-text-color) !important;
+    }
+</style><script>
+    twikoo.init({
+        envId: 'https:\/\/acevs-twikoo.hf.space',
+        el: '#tcomment',region: 'ap-shanghai',})
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 ACEVS
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.29.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.e1f2480e6381068c0c16f8df6132e7904a2c2c0b5a7a15e782934b7c9da624ac.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="上周这个时候，孩子电脑休眠后，唤醒，就直接黑屏了。然后重启扫描硬盘后进去系统。然后过了几分钟黑屏死机。重启电源灯亮，硬盘不读不识别。也没有报警。也不能关机。断电才关机。通电就自己启动了。如此往复了2次不敢通电了。拆机。拔了内存。在安装上问题依旧。硬盘线也重新安装，没有效果，然后又拔了内存换了插槽，依旧不行。初步判断硬盘或者引导，最惨就是bios有问题了。因为通电不显示bios信息一直黑屏。也可能是电源问题。 然后第二天找来配件一个内存 一个硬盘，一个电源。换了内存，会报警了。5声短 滴滴。大概率内存问题，但是老内存不滴滴。奇怪。换了一块我之前组raid0用的 硬盘。插上问题依旧说明不是硬盘问题。然后换内存再次。这次开机主板故障灯就一闪一闪的，还是个氛围灯十分显眼。我去拔cpu的供电电源接口挺松的，我思考直接换电源吧。旧电源我也没拆掉，就是把主板供电硬盘 cpu供电接口拔出。换上另一个电源的接口。依旧报警。两个内存都报警了。我把原来的内存擦拭了一下。插上。有了好的效果。滴一身自检过了，进入系统。\n进入系统提示我配置文件丢失。我没在意。想着估计再次重启就好了。 然后关机测试就得电源是否 有问题。换上旧电源，依旧黑屏。电源有问题。然后把旧电源拆除，换另一个好用的旧电源。再次开机点亮。进入系统后还是提示配置文件问题。\n晚上有空我就想试着修复，网上方法很多，系统修复还原模式花了一个多小时，没有修复，scan 的一个命令扫描后也没有修复。因为孩子的电脑装的软件少，自定义配置少，直接重装系统。然后有一阵子安装steam chrome 我的世界。等 这次安装了新一点的ltsc，自带edge。这次没有安装主板自带的网卡驱动，没有重启电脑的时候一切正常，重启电脑后，不能上网了。然后又安装了主板自带的网卡驱动恢复。\n然后小孩用另一个低配笔记本 偶尔看看视频，直到今天上午，还有想玩泰拉瑞亚。然后我也安装好了，就让他用修复的台式机，开机二十分锺突然黑屏了，然后重启正常，玩了一个多小时，让他写英语试卷的时候，电脑又黑屏了。我去查资料发现黑屏引起原因几乎设计全部硬件。好吧。继续观察吧。可能是电源问题多点。新电源的话也贵，不如把这个cpu 内存 主板卖了。再看看其他二手的整套电脑。继续观察吧.晚上有空再跑个甜甜圈看看。\n另外steam的泰拉瑞亚，云端竟然没有存档，得点击一下到云端，这个今天才发现。孩子从头玩的原因因为这个。存档也是晚上看有没有吧。荣誉成就还在，存档没有了。\n配置是i3 9100 8g内存 512G 机械硬盘。技嘉主板\n">
+<title>孩子的电脑维修1</title>
+
+<link rel='canonical' href='http://localhost:1313/post/%E5%AD%A9%E5%AD%90%E7%9A%84%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE1/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="孩子的电脑维修1">
+<meta property='og:description' content="上周这个时候，孩子电脑休眠后，唤醒，就直接黑屏了。然后重启扫描硬盘后进去系统。然后过了几分钟黑屏死机。重启电源灯亮，硬盘不读不识别。也没有报警。也不能关机。断电才关机。通电就自己启动了。如此往复了2次不敢通电了。拆机。拔了内存。在安装上问题依旧。硬盘线也重新安装，没有效果，然后又拔了内存换了插槽，依旧不行。初步判断硬盘或者引导，最惨就是bios有问题了。因为通电不显示bios信息一直黑屏。也可能是电源问题。 然后第二天找来配件一个内存 一个硬盘，一个电源。换了内存，会报警了。5声短 滴滴。大概率内存问题，但是老内存不滴滴。奇怪。换了一块我之前组raid0用的 硬盘。插上问题依旧说明不是硬盘问题。然后换内存再次。这次开机主板故障灯就一闪一闪的，还是个氛围灯十分显眼。我去拔cpu的供电电源接口挺松的，我思考直接换电源吧。旧电源我也没拆掉，就是把主板供电硬盘 cpu供电接口拔出。换上另一个电源的接口。依旧报警。两个内存都报警了。我把原来的内存擦拭了一下。插上。有了好的效果。滴一身自检过了，进入系统。\n进入系统提示我配置文件丢失。我没在意。想着估计再次重启就好了。 然后关机测试就得电源是否 有问题。换上旧电源，依旧黑屏。电源有问题。然后把旧电源拆除，换另一个好用的旧电源。再次开机点亮。进入系统后还是提示配置文件问题。\n晚上有空我就想试着修复，网上方法很多，系统修复还原模式花了一个多小时，没有修复，scan 的一个命令扫描后也没有修复。因为孩子的电脑装的软件少，自定义配置少，直接重装系统。然后有一阵子安装steam chrome 我的世界。等 这次安装了新一点的ltsc，自带edge。这次没有安装主板自带的网卡驱动，没有重启电脑的时候一切正常，重启电脑后，不能上网了。然后又安装了主板自带的网卡驱动恢复。\n然后小孩用另一个低配笔记本 偶尔看看视频，直到今天上午，还有想玩泰拉瑞亚。然后我也安装好了，就让他用修复的台式机，开机二十分锺突然黑屏了，然后重启正常，玩了一个多小时，让他写英语试卷的时候，电脑又黑屏了。我去查资料发现黑屏引起原因几乎设计全部硬件。好吧。继续观察吧。可能是电源问题多点。新电源的话也贵，不如把这个cpu 内存 主板卖了。再看看其他二手的整套电脑。继续观察吧.晚上有空再跑个甜甜圈看看。\n另外steam的泰拉瑞亚，云端竟然没有存档，得点击一下到云端，这个今天才发现。孩子从头玩的原因因为这个。存档也是晚上看有没有吧。荣誉成就还在，存档没有了。\n配置是i3 9100 8g内存 512G 机械硬盘。技嘉主板\n">
+<meta property='og:url' content='http://localhost:1313/post/%E5%AD%A9%E5%AD%90%E7%9A%84%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE1/'>
+<meta property='og:site_name' content='ACEVS'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-11-10T08:56:15&#43;08:00'/><meta property='article:modified_time' content='2024-11-10T08:56:15&#43;08:00'/>
+<meta name="twitter:title" content="孩子的电脑维修1">
+<meta name="twitter:description" content="上周这个时候，孩子电脑休眠后，唤醒，就直接黑屏了。然后重启扫描硬盘后进去系统。然后过了几分钟黑屏死机。重启电源灯亮，硬盘不读不识别。也没有报警。也不能关机。断电才关机。通电就自己启动了。如此往复了2次不敢通电了。拆机。拔了内存。在安装上问题依旧。硬盘线也重新安装，没有效果，然后又拔了内存换了插槽，依旧不行。初步判断硬盘或者引导，最惨就是bios有问题了。因为通电不显示bios信息一直黑屏。也可能是电源问题。 然后第二天找来配件一个内存 一个硬盘，一个电源。换了内存，会报警了。5声短 滴滴。大概率内存问题，但是老内存不滴滴。奇怪。换了一块我之前组raid0用的 硬盘。插上问题依旧说明不是硬盘问题。然后换内存再次。这次开机主板故障灯就一闪一闪的，还是个氛围灯十分显眼。我去拔cpu的供电电源接口挺松的，我思考直接换电源吧。旧电源我也没拆掉，就是把主板供电硬盘 cpu供电接口拔出。换上另一个电源的接口。依旧报警。两个内存都报警了。我把原来的内存擦拭了一下。插上。有了好的效果。滴一身自检过了，进入系统。\n进入系统提示我配置文件丢失。我没在意。想着估计再次重启就好了。 然后关机测试就得电源是否 有问题。换上旧电源，依旧黑屏。电源有问题。然后把旧电源拆除，换另一个好用的旧电源。再次开机点亮。进入系统后还是提示配置文件问题。\n晚上有空我就想试着修复，网上方法很多，系统修复还原模式花了一个多小时，没有修复，scan 的一个命令扫描后也没有修复。因为孩子的电脑装的软件少，自定义配置少，直接重装系统。然后有一阵子安装steam chrome 我的世界。等 这次安装了新一点的ltsc，自带edge。这次没有安装主板自带的网卡驱动，没有重启电脑的时候一切正常，重启电脑后，不能上网了。然后又安装了主板自带的网卡驱动恢复。\n然后小孩用另一个低配笔记本 偶尔看看视频，直到今天上午，还有想玩泰拉瑞亚。然后我也安装好了，就让他用修复的台式机，开机二十分锺突然黑屏了，然后重启正常，玩了一个多小时，让他写英语试卷的时候，电脑又黑屏了。我去查资料发现黑屏引起原因几乎设计全部硬件。好吧。继续观察吧。可能是电源问题多点。新电源的话也贵，不如把这个cpu 内存 主板卖了。再看看其他二手的整套电脑。继续观察吧.晚上有空再跑个甜甜圈看看。\n另外steam的泰拉瑞亚，云端竟然没有存档，得点击一下到云端，这个今天才发现。孩子从头玩的原因因为这个。存档也是晚上看有没有吧。荣誉成就还在，存档没有了。\n配置是i3 9100 8g内存 512G 机械硬盘。技嘉主板\n">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu14767566042683997439.png" width="300"
+                            height="308" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">ACEVS</a></h1>
+            <h2 class="site-description"></h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/%E5%AD%A9%E5%AD%90%E7%9A%84%E7%94%B5%E8%84%91%E7%BB%B4%E4%BF%AE1/">孩子的电脑维修1</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Nov 10, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    1 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>上周这个时候，孩子电脑休眠后，唤醒，就直接黑屏了。然后重启扫描硬盘后进去系统。然后过了几分钟黑屏死机。重启电源灯亮，硬盘不读不识别。也没有报警。也不能关机。断电才关机。通电就自己启动了。如此往复了2次不敢通电了。拆机。拔了内存。在安装上问题依旧。硬盘线也重新安装，没有效果，然后又拔了内存换了插槽，依旧不行。初步判断硬盘或者引导，最惨就是bios有问题了。因为通电不显示bios信息一直黑屏。也可能是电源问题。
+然后第二天找来配件一个内存 一个硬盘，一个电源。换了内存，会报警了。5声短 滴滴。大概率内存问题，但是老内存不滴滴。奇怪。换了一块我之前组raid0用的 硬盘。插上问题依旧说明不是硬盘问题。然后换内存再次。这次开机主板故障灯就一闪一闪的，还是个氛围灯十分显眼。我去拔cpu的供电电源接口挺松的，我思考直接换电源吧。旧电源我也没拆掉，就是把主板供电硬盘 cpu供电接口拔出。换上另一个电源的接口。依旧报警。两个内存都报警了。我把原来的内存擦拭了一下。插上。有了好的效果。滴一身自检过了，进入系统。</p>
+<p>进入系统提示我配置文件丢失。我没在意。想着估计再次重启就好了。
+然后关机测试就得电源是否 有问题。换上旧电源，依旧黑屏。电源有问题。然后把旧电源拆除，换另一个好用的旧电源。再次开机点亮。进入系统后还是提示配置文件问题。</p>
+<p>晚上有空我就想试着修复，网上方法很多，系统修复还原模式花了一个多小时，没有修复，scan 的一个命令扫描后也没有修复。因为孩子的电脑装的软件少，自定义配置少，直接重装系统。然后有一阵子安装steam chrome 我的世界。等 这次安装了新一点的ltsc，自带edge。这次没有安装主板自带的网卡驱动，没有重启电脑的时候一切正常，重启电脑后，不能上网了。然后又安装了主板自带的网卡驱动恢复。</p>
+<p>然后小孩用另一个低配笔记本 偶尔看看视频，直到今天上午，还有想玩泰拉瑞亚。然后我也安装好了，就让他用修复的台式机，开机二十分锺突然黑屏了，然后重启正常，玩了一个多小时，让他写英语试卷的时候，电脑又黑屏了。我去查资料发现黑屏引起原因几乎设计全部硬件。好吧。继续观察吧。可能是电源问题多点。新电源的话也贵，不如把这个cpu 内存 主板卖了。再看看其他二手的整套电脑。继续观察吧.晚上有空再跑个甜甜圈看看。</p>
+<p>另外steam的泰拉瑞亚，云端竟然没有存档，得点击一下到云端，这个今天才发现。孩子从头玩的原因因为这个。存档也是晚上看有没有吧。荣誉成就还在，存档没有了。</p>
+<p>配置是i3 9100  8g内存 512G 机械硬盘。技嘉主板</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script src="//cdn.jsdelivr.net/npm/twikoo@1.6.39/dist/twikoo.all.min.js"></script>
+<div id="tcomment"></div>
+<style>
+    .twikoo {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    :root[data-scheme="dark"] {
+        --twikoo-body-text-color-main: rgba(255, 255, 255, 0.9);
+        --twikoo-body-text-color: rgba(255, 255, 255, 0.7);
+    }
+    .twikoo .el-input-group__prepend,
+    .twikoo .tk-action-icon,
+    .twikoo .tk-submit-action-icon,
+    .twikoo .tk-time,
+    .twikoo .tk-comments-no,
+    .twikoo .tk-comments-count {
+        color: var(--twikoo-body-text-color);
+    }
+    .twikoo .el-input__inner,
+    .twikoo .el-textarea__inner,
+    .twikoo .tk-preview-container,
+    .twikoo .tk-content,
+    .twikoo .tk-nick,
+    .twikoo .tk-send {
+        color: var(--twikoo-body-text-color-main);
+    }
+    .twikoo .el-button{
+        color: var(--twikoo-body-text-color)!important;
+    }
+    .twikoo .el-input__count {
+        color: var(--twikoo-body-text-color) !important;
+    }
+    .OwO .OwO-body {
+        background-color: var(--body-background) !important;
+        color: var(--body-text-color) !important;
+    }
+</style><script>
+    twikoo.init({
+        envId: 'https:\/\/acevs-twikoo.hf.space',
+        el: '#tcomment',region: 'ap-shanghai',})
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 ACEVS
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.29.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.e1f2480e6381068c0c16f8df6132e7904a2c2c0b5a7a15e782934b7c9da624ac.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
